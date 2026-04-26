@@ -145,3 +145,8 @@ htmlcov/
 # Vercel
 .vercel
 .vercel.json
+
+# 내부 참고 자료 (공개 금지)
+docs/drafts/idea_climashelter_report.md
+docs/research/
+research/
