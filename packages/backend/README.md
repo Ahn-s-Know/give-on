@@ -2,7 +2,35 @@
 
 기후 위기로부터 축산 농가를 보호하는 AI 플랫폼의 FastAPI 백엔드
 
-## 🚀 빠른 시작 (5분)
+## 🚀 빠른 시작 (1줄!)
+
+### 한 번에 시작하기
+
+**macOS/Linux:**
+```bash
+cd packages/backend && bash setup.sh
+```
+
+**Windows:**
+```bash
+cd packages/backend
+setup.bat
+```
+
+**크로스플랫폼 (Python):**
+```bash
+cd packages/backend && python setup.py
+```
+
+자동으로 다음을 실행합니다:
+1. ✅ 가상환경 생성/활성화
+2. ✅ 패키지 설치 (`pip install -r requirements.txt`)
+3. ✅ 더미 데이터 생성
+4. ✅ FastAPI 서버 시작
+
+---
+
+## 📚 수동 설정 (선택사항)
 
 ### 1. 가상환경 설정
 ```bash
@@ -16,17 +44,9 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3. 더미 데이터 생성 (SQLite)
+### 3. 더미 데이터 생성
 ```bash
 python -m scripts.seed_dummy_data
-```
-
-출력:
-```
-✅ 데이터베이스 테이블 생성 완료
-✅ 5개 농가 데이터 생성 완료
-✅ 8개 기상 데이터 생성 완료
-✅ 8개 경보 데이터 생성 완료
 ```
 
 ### 4. 서버 실행
