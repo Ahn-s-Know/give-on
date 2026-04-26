@@ -19,13 +19,21 @@ Base = declarative_base()
 
 def get_async_engine():
     """비동기 엔진 생성"""
-    return create_async_engine(
-        settings.DATABASE_URL,
-        echo=settings.DEBUG,  # SQL 쿼리 출력 (디버그 모드)
-        pool_pre_ping=True,  # 연결 유효성 체크
-        pool_recycle=3600,  # 1시간마다 연결 재활용
-        poolclass=NullPool,  # Supabase 호환성 (프로덕션: QueuePool 사용)
-    )
+    # SQLite 옵션
+    engine_kwargs = {
+        "echo": settings.DEBUG,  # SQL 쿼리 출력 (디버그 모드)
+    }
+
+    # SQLite인 경우 추가 옵션
+    if "sqlite" in settings.DATABASE_URL:
+        engine_kwargs["connect_args"] = {"check_same_thread": False}
+    else:
+        # PostgreSQL인 경우
+        engine_kwargs["pool_pre_ping"] = True
+        engine_kwargs["pool_recycle"] = 3600
+        engine_kwargs["poolclass"] = NullPool
+
+    return create_async_engine(settings.DATABASE_URL, **engine_kwargs)
 
 
 # 비동기 세션 팩토리

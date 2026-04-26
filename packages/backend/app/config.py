@@ -13,8 +13,8 @@ class Settings(BaseSettings):
     DEBUG: bool = False
     ENVIRONMENT: str = "development"  # development, staging, production
 
-    # 데이터베이스
-    DATABASE_URL: str = "postgresql+asyncpg://user:password@localhost:5432/giveon_db"
+    # 데이터베이스 (개발: SQLite, 프로덕션: PostgreSQL)
+    DATABASE_URL: str = "sqlite+aiosqlite:///./giveon_dev.db"
 
     # 기상청 API
     KMA_API_KEY: str = ""
