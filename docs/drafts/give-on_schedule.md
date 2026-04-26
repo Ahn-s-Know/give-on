@@ -1,4 +1,4 @@
-# LifeSaver 개발 & 제출 일정
+# Give On 개발 & 제출 일정
 
 > 기간: 2026-04-24 (금) ~ 2026-05-18 (월) — 총 25일  
 > 팀: macOS/iOS 개발자(A) + 프론트엔드 개발자(B) — 현업 병행  
@@ -243,7 +243,7 @@
 | 담당 | 작업 |
 |---|---|
 | A | 에어코리아 대기오염 API 연동 (복합 위험 스코어 가산) |
-| B | 관리자 PWA Vercel 배포 (`admin.lifesaver.kr` 또는 서브패스) |
+| B | 관리자 PWA Vercel 배포 (`admin.give-on.kr` 또는 서브패스) |
 
 ### 5/8 (금) 평일 저녁
 
@@ -442,7 +442,7 @@ Nice to Have (시간 남으면)
 Slide 1  표지 — 서비스명, 한 줄 소개, 팀명
 Slide 2  문제 — 기후변화로 인한 가축 폐사 현황 (숫자·차트)
 Slide 3  기존 대응의 한계 — "경보가 늦다"
-Slide 4  솔루션 개요 — LifeSaver 3개 클라이언트 구조
+Slide 4  솔루션 개요 — Give On 3개 클라이언트 구조
 Slide 5  AI Agent 작동 방식 — 기상청 API → 위험도 → Claude → 알림
 Slide 6  공공데이터 활용 — 6개 API 교차 활용
 Slide 7  기부 플랫폼 + 리워드 — 시민 참여 구조

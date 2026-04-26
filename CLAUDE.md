@@ -1,12 +1,12 @@
 # Claude Code 협업 가이드
 
-LifeSaver 프로젝트에서 Claude Code를 활용하기 위한 실용 가이드입니다.
+Give On 프로젝트에서 Claude Code를 활용하기 위한 실용 가이드입니다.
 
 ---
 
 ## 🎯 프로젝트 개요
 
-**LifeSaver**는 기후 위기로부터 축산 농가를 보호하는 AI 플랫폼입니다.
+**Give On**는 기후 위기로부터 축산 농가를 보호하는 AI 플랫폼입니다.
 
 - **기간:** 2026-04-24 ~ 2026-05-18 (4주)
 - **팀:** macOS 개발자(A) + 프론트엔드 개발자(B)
@@ -211,7 +211,7 @@ Tailwind CSS로 스타일링"
 ### 4. 기존 코드 참고 지시
 
 ```
-"docs/drafts/lifesaver_dev_plan.md의
+"docs/drafts/give-on_dev_plan.md의
 API 명세를 참고해서 구현해줘"
 ```
 
@@ -253,16 +253,16 @@ API 명세를 참고해서 구현해줘"
 
 작업 시작 전에 다음 문서를 Claude와 공유하면 유용합니다:
 
-1. **기술 스택:** docs/drafts/lifesaver_dev_plan.md
+1. **기술 스택:** docs/drafts/give-on_dev_plan.md
    - API 명세 (섹션 8)
    - DB 스키마 (섹션 9)
    - 환경변수 (섹션 10)
 
-2. **개발 일정:** docs/drafts/lifesaver_schedule.md
+2. **개발 일정:** docs/drafts/give-on_schedule.md
    - Phase별 마일스톤
    - 일일 작업 내용
 
-3. **제안서:** docs/drafts/lifesaver_proposal.md
+3. **제안서:** docs/drafts/give-on_proposal.md
    - 서비스 흐름
    - AI Agent 구조
    - 공공데이터 활용 계획
@@ -330,7 +330,7 @@ def fetch_weather(location):
 
 ## 🎉 결론
 
-Claude Code는 LifeSaver 프로젝트의 **개발 속도를 2배 이상 높일 수 있습니다.**
+Claude Code는 Give On 프로젝트의 **개발 속도를 2배 이상 높일 수 있습니다.**
 
 특히:
 - ✅ 보일러플레이트 코드 자동 생성

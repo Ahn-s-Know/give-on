@@ -1,4 +1,4 @@
-# LifeSaver 개발 플랜
+# Give On 개발 플랜
 
 > 팀 구성: macOS/iOS 개발자 1 + 프론트엔드 개발자 1  
 > 기간: 4주 MVP → 공모전 제출  
@@ -77,7 +77,7 @@
 ### 2-1. 프로젝트 구조
 
 ```
-lifesaver-backend/
+give-on-backend/
 ├── app/
 │   ├── main.py                    # FastAPI 앱 진입점
 │   ├── config.py                  # 환경변수 로드 (pydantic-settings)
@@ -365,8 +365,8 @@ python -m app.main
 ### 3-1. 프로젝트 구조
 
 ```
-LifeSaverFarm/
-├── LifeSaverFarmApp.swift         # 앱 진입점, AppDelegate 설정
+Give OnFarm/
+├── Give OnFarmApp.swift         # 앱 진입점, AppDelegate 설정
 │
 ├── Core/
 │   ├── Network/
@@ -590,7 +590,7 @@ dependencies:
 ### 4-1. 프로젝트 구조
 
 ```
-lifesaver-web/
+give-on-web/
 ├── app/                           # Next.js 15 App Router
 │   ├── layout.tsx                 # 공통 레이아웃
 │   ├── page.tsx                   # 메인 페이지 (기부 랜딩)
@@ -649,7 +649,7 @@ lifesaver-web/
 
 ```
 ┌─────────────────────────────────────┐
-│  LifeSaver                    [로그인]│
+│  Give On                    [로그인]│
 ├─────────────────────────────────────┤
 │                                     │
 │  "지금 이 순간,                      │
@@ -681,7 +681,7 @@ lifesaver-web/
 export async function generateMetadata({ params }: Props) {
     const farm = await getFarm(params.farmId);
     return {
-        title: `${farm.story.title} — LifeSaver`,
+        title: `${farm.story.title} — Give On`,
         openGraph: {
             title: farm.story.title,
             description: farm.story.story.slice(0, 100),
@@ -828,7 +828,7 @@ export function DamageMap({ farms }: { farms: Farm[] }) {
 ### 5-1. 구조 (시민 웹과 모노레포 또는 별도 디렉토리)
 
 ```
-lifesaver-admin/          # 또는 lifesaver-web/app/admin/ 하위에 구성
+give-on-admin/          # 또는 give-on-web/app/admin/ 하위에 구성
 ├── app/
 │   ├── layout.tsx        # 관리자 전용 레이아웃 (사이드바)
 │   ├── page.tsx          # 대시보드 메인
@@ -861,7 +861,7 @@ lifesaver-admin/          # 또는 lifesaver-web/app/admin/ 하위에 구성
 
 ```json
 {
-    "name": "LifeSaver Admin",
+    "name": "Give On Admin",
     "short_name": "LS Admin",
     "start_url": "/admin",
     "display": "standalone",
@@ -897,7 +897,7 @@ export default nextConfig;
 
 ```
 ┌──────────────────────┐
-│  LifeSaver Admin  [≡] │
+│  Give On Admin  [≡] │
 ├──────────────────────┤
 │ 오늘 위험 23 / 주의 47│
 ├──────────────────────┤
@@ -996,7 +996,7 @@ weather_logs    — 기상 수집 이력 (디버깅용)
 └── Vercel
     - 무료 플랜 (취미 프로젝트)
     - GitHub push → 자동 배포
-    - 도메인: lifesaver.vercel.app (또는 커스텀 도메인)
+    - 도메인: give-on.vercel.app (또는 커스텀 도메인)
 
 DB
 └── Supabase (무료 플랜)

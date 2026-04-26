@@ -1,4 +1,4 @@
-# LifeSaver — 기후변화로부터 생명을 지키는 AI 플랫폼
+# Give On — 기후 위기 속 축산 농가를 지키는 기부 플랫폼
 
 기후 위기로부터 축산 농가를 보호하고, 피해 농가를 시민과 연결하는 통합 플랫폼입니다.
 
@@ -13,7 +13,7 @@
 ### 시스템 아키텍처
 
 ```
-[LifeSaver Farm iOS]     [LifeSaver Give Web]     [LifeSaver Admin PWA]
+[Give On Farm iOS]       [Give On Web]            [Give On Admin PWA]
 (농가 앱)               (기부 웹)               (관리자 대시보드)
       │                       │                        │
       └───────────────────────┼────────────────────────┘
@@ -30,7 +30,7 @@
 ### 디렉터리 구조
 
 ```
-lifesaver/
+give-on/
 ├── packages/
 │   ├── backend/                 # FastAPI 백엔드 (macOS 개발자)
 │   │   ├── app/
@@ -50,12 +50,12 @@ lifesaver/
 │   │   └── Dockerfile
 │   │
 │   ├── ios/                     # SwiftUI iOS 앱 (macOS 개발자)
-│   │   ├── LifeSaverFarm/
+│   │   ├── GiveOnFarm/
 │   │   │   ├── Core/            # 네트워크, 알림, 저장소
 │   │   │   ├── Features/        # 온보딩, 홈, 경보, 설정
 │   │   │   ├── DesignSystem/    # 컬러, 타이포그래피, 컴포넌트
 │   │   │   └── Resources/       # 에셋, plist
-│   │   └── LifeSaverFarm.xcodeproj
+│   │   └── GiveOnFarm.xcodeproj
 │   │
 │   └── web/                     # Next.js 웹 (프론트엔드 개발자)
 │       ├── app/                 # App Router
@@ -115,8 +115,8 @@ npm run dev
 
 ### iOS 앱 개발 시작
 ```bash
-cd packages/ios/LifeSaverFarm
-open LifeSaverFarm.xcodeproj
+cd packages/ios/GiveOnFarm
+open GiveOnFarm.xcodeproj
 ```
 
 ---
@@ -130,7 +130,7 @@ open LifeSaverFarm.xcodeproj
 | **Phase 2** | 5/6-5/10 | 통합 테스트 및 E2E 검증 |
 | **Phase 3** | 5/11-5/18 | 제출 서류 및 최종 마무리 |
 
-자세한 일정은 [docs/drafts/lifesaver_schedule.md](./docs/drafts/lifesaver_schedule.md) 참고
+자세한 일정은 [docs/drafts/give-on_schedule.md](./docs/drafts/give-on_schedule.md) 참고
 
 ---
 
@@ -171,9 +171,9 @@ docs: 문서 수정
 
 | 문서 | 설명 |
 |---|---|
-| [lifesaver_schedule.md](./docs/drafts/lifesaver_schedule.md) | 상세 개발 일정 |
-| [lifesaver_dev_plan.md](./docs/drafts/lifesaver_dev_plan.md) | 기술 설계 |
-| [lifesaver_proposal.md](./docs/drafts/lifesaver_proposal.md) | 공모전 제안서 |
+| [give-on_schedule.md](./docs/drafts/give-on_schedule.md) | 상세 개발 일정 |
+| [give-on_dev_plan.md](./docs/drafts/give-on_dev_plan.md) | 기술 설계 |
+| [give-on_proposal.md](./docs/drafts/give-on_proposal.md) | 공모전 제안서 |
 | [CLAUDE.md](./CLAUDE.md) | Claude Code 가이드 |
 
 ---
