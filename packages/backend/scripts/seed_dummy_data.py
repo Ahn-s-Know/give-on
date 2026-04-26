@@ -1,19 +1,78 @@
 """
 더미 데이터 생성 스크립트
 실행: python -m scripts.seed_dummy_data
+또는: python scripts/seed_dummy_data.py
 """
+import sys
 import asyncio
-from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
-from app.config import get_settings
-from app.database import Base
-from app.models import Farm, WeatherLog, Alert
+import traceback
+from pathlib import Path
 
-settings = get_settings()
+# 프로젝트 루트를 Python 경로에 추가
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root.parent))
 
+print("🔍 모듈 임포트 중...\n")
+
+try:
+    print("  ✓ sqlalchemy 임포트 시도...")
+    from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
+
+    print("  ✓ app.config 임포트 시도...")
+    from app.config import get_settings
+
+    print("  ✓ app.database 임포트 시도...")
+    from app.database import Base
+
+    print("  ✓ app.models 임포트 시도...")
+    from app.models import Farm, WeatherLog, Alert
+
+    print("\n✅ 모든 모듈 임포트 성공!\n")
+
+except ImportError as e:
+    print(f"\n❌ 임포트 오류 발생!")
+    print(f"\n상세 에러 메시지:")
+    print(f"  {type(e).__name__}: {e}\n")
+    print("전체 스택 추적:")
+    traceback.print_exc()
+    print("\n💡 해결책:")
+    print("1. 가상환경이 활성화되었는지 확인:")
+    print("   which python  (macOS/Linux)")
+    print("   where python  (Windows)\n")
+    print("2. 패키지를 설치해주세요:")
+    print("   pip install -r requirements.txt\n")
+    print("3. 또는 setup 스크립트를 사용하세요:")
+    print("   python setup.py (권장)\n")
+    sys.exit(1)
+except Exception as e:
+    print(f"\n❌ 예상치 못한 오류!")
+    print(f"  {type(e).__name__}: {e}\n")
+    traceback.print_exc()
+    sys.exit(1)
 
 async def init_db():
     """데이터베이스 초기화 (테이블 생성)"""
-    engine = create_async_engine(settings.DATABASE_URL, echo=False)
+    from app.database import get_async_engine
+
+    settings = get_settings()
+
+    # SQLite인 경우 별도 엔진 설정
+    if "sqlite" in settings.DATABASE_URL:
+        engine_kwargs = {
+            "echo": False,
+            "connect_args": {"check_same_thread": False}
+        }
+    else:
+        # PostgreSQL인 경우
+        from sqlalchemy.pool import NullPool
+        engine_kwargs = {
+            "echo": False,
+            "pool_pre_ping": True,
+            "pool_recycle": 3600,
+            "poolclass": NullPool,
+        }
+
+    engine = create_async_engine(settings.DATABASE_URL, **engine_kwargs)
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
     print("✅ 데이터베이스 테이블 생성 완료")
@@ -260,4 +319,16 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except Exception as e:
+        print(f"\n❌ 오류 발생: {e}")
+        print("\n🔍 트러블슈팅:")
+        print("1. 패키지가 설치되었는지 확인:")
+        print("   pip list | grep -i sqlalchemy")
+        print("\n2. 가상환경이 활성화되었는지 확인:")
+        print("   which python  (macOS/Linux)")
+        print("   where python  (Windows)")
+        print("\n3. setup 스크립트 다시 실행:")
+        print("   python setup.py")
+        sys.exit(1)

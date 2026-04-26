@@ -89,13 +89,34 @@ app/
 
 ## 🗄️ 데이터베이스
 
-**개발 환경**: SQLite (로컬 파일)
-- 파일: `giveon_dev.db`
-- 설치 불필요, 파일 기반
-- 테이블 자동 생성
+### 📌 개발 환경 (현재)
+**SQLite 로컬 데이터베이스** ✅ **설치 불필요**
 
-**프로덕션**: PostgreSQL (Supabase 추천)
-- `.env`의 `DATABASE_URL` 변경
+| 항목 | 설명 |
+|---|---|
+| **엔진** | SQLite (파일 기반) |
+| **파일** | `giveon_dev.db` |
+| **드라이버** | aiosqlite (비동기) |
+| **설치** | Python 내장 (별도 설치 불필요) |
+| **관리** | 자동 생성/관리 |
+| **장점** | 빠른 개발, 배포 없음, 순간 리셋 가능 |
+
+### 🔒 프로덕션 환경 (나중에)
+**PostgreSQL** (Supabase 또는 자체 서버)
+
+변경하려면:
+```bash
+# .env 파일 수정
+DATABASE_URL=postgresql+asyncpg://user:password@host:5432/giveon_db
+
+# 또는 환경변수 설정
+export DATABASE_URL=postgresql+asyncpg://...
+
+# 서버 재시작
+uvicorn app.main:app --reload
+```
+
+> ℹ️ SQLAlchemy ORM이 같은 코드로 자동 처리
 
 ## 📊 더미 데이터
 
