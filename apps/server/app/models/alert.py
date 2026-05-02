@@ -1,5 +1,5 @@
 """경보 알림 ORM 모델"""
-from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Text
+from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Text, Boolean
 from sqlalchemy.sql import func
 from app.database import Base
 
@@ -14,6 +14,8 @@ class Alert(Base):
     temperature = Column(Integer, nullable=True)  # 당시 기온
     humidity = Column(Integer, nullable=True)  # 당시 습도
     message = Column(Text, nullable=False)  # AI 경보 메시지 (150자 이내)
+    is_sent = Column(Boolean, default=False)           # FCM 발송 여부
+    sent_via = Column(String(100), nullable=True)      # 발송 채널 JSON e.g. '["fcm","sms"]'
     created_at = Column(DateTime, server_default=func.now())
 
     def __repr__(self):

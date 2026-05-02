@@ -17,6 +17,10 @@ class Farm(Base):
     latitude = Column(Float, nullable=True)  # 위도
     longitude = Column(Float, nullable=True)  # 경도
     phone_number = Column(String(20), nullable=True)  # 전화번호
+    nx = Column(Integer, nullable=True)              # 기상청 격자 X 좌표 (자동 계산)
+    ny = Column(Integer, nullable=True)              # 기상청 격자 Y 좌표 (자동 계산)
+    kakao_id = Column(String(100), nullable=True)    # 카카오 알림톡 수신용 (고령 농가)
+    subscription = Column(String(20), default="basic")  # basic | pro
     device_tokens = Column(String(1000), nullable=True)  # FCM 토큰 (JSON 배열)
     is_active = Column(Boolean, default=True)  # 활성 상태
     created_at = Column(DateTime, server_default=func.now())
