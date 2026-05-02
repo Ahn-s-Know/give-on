@@ -3,7 +3,7 @@
 """
 import pytest
 import asyncio
-from app.data.kma_client import KMAClient, LatLngToGrid, WeatherData
+from app.integrations.kma_client import KMAClient, LatLngToGrid, WeatherData
 
 
 class TestLatLngToGrid:
