@@ -113,18 +113,10 @@ struct DamageReportView: View {
                 estimatedLoss: Int(estimatedLoss),
                 farmerNote: farmerNote.isEmpty ? nil : farmerNote
             )
-            await APIClient.shared.submitDamageReport(report)
+            try? await APIClient.shared.submitDamageReport(report)
             isSubmitting = false
             submitted = true
         }
-    }
-}
-
-// MARK: - Wrapper
-
-extension APIClient {
-    func submitDamageReport(_ body: DamageReportCreate) async {
-        _ = try? await submitDamageReport(body)
     }
 }
 

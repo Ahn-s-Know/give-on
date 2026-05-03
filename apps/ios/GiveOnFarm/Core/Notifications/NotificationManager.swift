@@ -2,13 +2,14 @@
 // Give On Farm — FCM 푸시 알림 설정
 
 import Foundation
+import UIKit
 import UserNotifications
 
 #if canImport(FirebaseMessaging)
 import FirebaseMessaging
 #endif
 
-final class NotificationManager: NSObject {
+final class NotificationManager: NSObject, @unchecked Sendable {
     static let shared = NotificationManager()
     private override init() { super.init() }
 
@@ -20,10 +21,7 @@ final class NotificationManager: NSObject {
             UserDefaultsManager.shared.notificationEnabled = granted
             if granted {
                 await MainActor.run {
-                    #if canImport(UIKit)
-                    import UIKit
                     UIApplication.shared.registerForRemoteNotifications()
-                    #endif
                 }
             }
         } catch {

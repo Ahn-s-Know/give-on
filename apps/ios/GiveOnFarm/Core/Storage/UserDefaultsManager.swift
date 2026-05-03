@@ -3,14 +3,14 @@
 
 import Foundation
 
-final class UserDefaultsManager {
+final class UserDefaultsManager: @unchecked Sendable {
     static let shared = UserDefaultsManager()
 
     private let defaults = UserDefaults.standard
     private init() {}
 
     // MARK: - Keys
-    private enum Key: String {
+    private enum Key: String, CaseIterable {
         case farmId = "give_on_farm_id"
         case farmName = "give_on_farm_name"
         case livestockType = "give_on_livestock_type"
@@ -62,5 +62,3 @@ final class UserDefaultsManager {
         Key.allCases.forEach { defaults.removeObject(forKey: $0.rawValue) }
     }
 }
-
-extension UserDefaultsManager.Key: CaseIterable {}

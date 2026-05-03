@@ -51,20 +51,12 @@ final class HomeViewModel: ObservableObject {
         let item = checklistItems[idx]
 
         Task {
-            await APIClient.shared.saveChecklistItem(
+            try? await APIClient.shared.saveChecklistItem(
                 farmId: farmId,
                 alertId: nil,
                 itemId: item.id,
                 itemText: item.text
             )
         }
-    }
-}
-
-// MARK: - APIClient extension (non-throwing wrapper)
-
-extension APIClient {
-    func saveChecklistItem(farmId: Int, alertId: Int?, itemId: Int, itemText: String) async {
-        try? await saveChecklistItem(farmId: farmId, alertId: alertId, itemId: itemId, itemText: itemText)
     }
 }
