@@ -58,8 +58,8 @@ yarn.lock
 *.mode1v3
 *.mode2v3
 *.perspectivev3
+xcuserdata/
 *.xcworkspace/xcuserdata/
-*.xcworkspace/xcshareddata/
 DerivedData/
 *.hmap
 *.ipa
@@ -67,8 +67,8 @@ DerivedData/
 *.dSYM.zip
 .DS_Store
 Pods/
-*.lock
 *.xcconfig.local
+# XcodeGen: project.yml → .xcodeproj 생성. pbxproj/xcshareddata 커밋 유지
 
 # macOS
 .DS_Store

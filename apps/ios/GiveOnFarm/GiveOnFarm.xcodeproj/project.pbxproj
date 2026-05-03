@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03FB3A46B735D38D8BD88349 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47DE14D6744663C6E6F60473 /* Endpoints.swift */; };
+		1AD1CE2209C725109EB9000C /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55A2CB16EFC01ED0858CB29 /* NotificationManager.swift */; };
+		3A4033D5911DD7CEAB0B35B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E5FD89569DA7547391FEC /* AppDelegate.swift */; };
+		3FFF3942FDC0EAF18974A5F5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBF176242A3D2021550F2D6 /* Models.swift */; };
+		726FF999C2522977144E5D1E /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DDC639642D6EBEDF259739 /* APIClient.swift */; };
+		7A89E4DAC1CA35BB6E5BA9A2 /* RiskBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5E5789E26D9AA3C4A6B006 /* RiskBadge.swift */; };
+		7C6E644EA2E27F9605E4DED3 /* DamageReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E0280FFB76D98D5E689F0B /* DamageReportView.swift */; };
+		8C0AC69D29C55439F99DC824 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9830536A5C5F42ED004C1CF /* HomeView.swift */; };
+		A3E08960723379B6984A02DF /* GiveOnFarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FD24959F2FBA3A51182EDB /* GiveOnFarmApp.swift */; };
+		A42FBFC284E76C29330FAC1E /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4A83BFB4B8BAEC5248AF11 /* UserDefaultsManager.swift */; };
+		B90DD4204683A84F9CD19DF0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BEBDF1FA787A8AC83D11AE0 /* HomeViewModel.swift */; };
+		F42D7C4B4C51B4876D3C604A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7E2568E7C011497ED6EBE9 /* OnboardingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0631C4957626DE9609F64F16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 196DD48FCB1D1B1F93B6816D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1424096EA4A85B3034EB0AA;
+			remoteInfo = GiveOnFarm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03DDC639642D6EBEDF259739 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		3FBF176242A3D2021550F2D6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		47DE14D6744663C6E6F60473 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		579E5FD89569DA7547391FEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7965258FAB429DF0C79486F5 /* GiveOnFarmTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = GiveOnFarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BEBDF1FA787A8AC83D11AE0 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8C7E2568E7C011497ED6EBE9 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A55A2CB16EFC01ED0858CB29 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		AC01AF75C95177EBD88F2592 /* GiveOnFarm.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GiveOnFarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4A83BFB4B8BAEC5248AF11 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		C2E0280FFB76D98D5E689F0B /* DamageReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageReportView.swift; sourceTree = "<group>"; };
+		C4FD24959F2FBA3A51182EDB /* GiveOnFarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveOnFarmApp.swift; sourceTree = "<group>"; };
+		DF5E5789E26D9AA3C4A6B006 /* RiskBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiskBadge.swift; sourceTree = "<group>"; };
+		E9830536A5C5F42ED004C1CF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0636883B72ACCF5BEADCBF8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DF5E5789E26D9AA3C4A6B006 /* RiskBadge.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		09219C4B41D08360DD121C35 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				03DDC639642D6EBEDF259739 /* APIClient.swift */,
+				47DE14D6744663C6E6F60473 /* Endpoints.swift */,
+				3FBF176242A3D2021550F2D6 /* Models.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1568F839BF1A6340B9EE73C0 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				0636883B72ACCF5BEADCBF8B /* Components */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		2F5A882E51A5FEA088E70959 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				67428C54C5220B661DF2F7E0 /* DamageReport */,
+				B74AB3790621D896EE86A5E3 /* Home */,
+				361228A6E8BC207E1C7C1E23 /* Onboarding */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		361228A6E8BC207E1C7C1E23 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				8C7E2568E7C011497ED6EBE9 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		67428C54C5220B661DF2F7E0 /* DamageReport */ = {
+			isa = PBXGroup;
+			children = (
+				C2E0280FFB76D98D5E689F0B /* DamageReportView.swift */,
+			);
+			path = DamageReport;
+			sourceTree = "<group>";
+		};
+		7E08FF8DD93404194E6DB908 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				A55A2CB16EFC01ED0858CB29 /* NotificationManager.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		8C779298397ECE54BC160BD0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				579E5FD89569DA7547391FEC /* AppDelegate.swift */,
+				C4FD24959F2FBA3A51182EDB /* GiveOnFarmApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B74AB3790621D896EE86A5E3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E9830536A5C5F42ED004C1CF /* HomeView.swift */,
+				8BEBDF1FA787A8AC83D11AE0 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C967A611D36AC776CF8FC170 = {
+			isa = PBXGroup;
+			children = (
+				8C779298397ECE54BC160BD0 /* App */,
+				F558CC1E73C9154F912BF5B0 /* Core */,
+				1568F839BF1A6340B9EE73C0 /* DesignSystem */,
+				2F5A882E51A5FEA088E70959 /* Features */,
+				E0440F8C62B2B35DAA691226 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4104CB66E9D26698B7A1665 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				AD4A83BFB4B8BAEC5248AF11 /* UserDefaultsManager.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		E0440F8C62B2B35DAA691226 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC01AF75C95177EBD88F2592 /* GiveOnFarm.app */,
+				7965258FAB429DF0C79486F5 /* GiveOnFarmTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F558CC1E73C9154F912BF5B0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				09219C4B41D08360DD121C35 /* Network */,
+				7E08FF8DD93404194E6DB908 /* Notifications */,
+				D4104CB66E9D26698B7A1665 /* Storage */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3093500504557B8739F87BF5 /* GiveOnFarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B44CCCED4E02091A74A06BD /* Build configuration list for PBXNativeTarget "GiveOnFarmTests" */;
+			buildPhases = (
+				AE953A68D481B6A99D00D967 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7517D4104DEB47AEED2B2D5 /* PBXTargetDependency */,
+			);
+			name = GiveOnFarmTests;
+			packageProductDependencies = (
+			);
+			productName = GiveOnFarmTests;
+			productReference = 7965258FAB429DF0C79486F5 /* GiveOnFarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1424096EA4A85B3034EB0AA /* GiveOnFarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 951249CDAF9CAFF354277C68 /* Build configuration list for PBXNativeTarget "GiveOnFarm" */;
+			buildPhases = (
+				996BBFB0478EE7E17DA666D4 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GiveOnFarm;
+			packageProductDependencies = (
+			);
+			productName = GiveOnFarm;
+			productReference = AC01AF75C95177EBD88F2592 /* GiveOnFarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		196DD48FCB1D1B1F93B6816D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					3093500504557B8739F87BF5 = {
+						DevelopmentTeam = "";
+					};
+					F1424096EA4A85B3034EB0AA = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FAF5F69452F34C84D61AB8C7 /* Build configuration list for PBXProject "GiveOnFarm" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C967A611D36AC776CF8FC170;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E0440F8C62B2B35DAA691226 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1424096EA4A85B3034EB0AA /* GiveOnFarm */,
+				3093500504557B8739F87BF5 /* GiveOnFarmTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		996BBFB0478EE7E17DA666D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				726FF999C2522977144E5D1E /* APIClient.swift in Sources */,
+				3A4033D5911DD7CEAB0B35B7 /* AppDelegate.swift in Sources */,
+				7C6E644EA2E27F9605E4DED3 /* DamageReportView.swift in Sources */,
+				03FB3A46B735D38D8BD88349 /* Endpoints.swift in Sources */,
+				A3E08960723379B6984A02DF /* GiveOnFarmApp.swift in Sources */,
+				8C0AC69D29C55439F99DC824 /* HomeView.swift in Sources */,
+				B90DD4204683A84F9CD19DF0 /* HomeViewModel.swift in Sources */,
+				3FFF3942FDC0EAF18974A5F5 /* Models.swift in Sources */,
+				1AD1CE2209C725109EB9000C /* NotificationManager.swift in Sources */,
+				F42D7C4B4C51B4876D3C604A /* OnboardingView.swift in Sources */,
+				7A89E4DAC1CA35BB6E5BA9A2 /* RiskBadge.swift in Sources */,
+				A42FBFC284E76C29330FAC1E /* UserDefaultsManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE953A68D481B6A99D00D967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7517D4104DEB47AEED2B2D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1424096EA4A85B3034EB0AA /* GiveOnFarm */;
+			targetProxy = 0631C4957626DE9609F64F16 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4E55F0A2064538A1A1F2268B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.giveon.GiveOnFarm;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5E7AE6C4197B8D91667C4A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.giveon.GiveOnFarmTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiveOnFarm.app/GiveOnFarm";
+			};
+			name = Release;
+		};
+		63CD721AF189F09F43209DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		788EDBF19C8C6D7C9837C9E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.giveon.GiveOnFarmTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GiveOnFarm.app/GiveOnFarm";
+			};
+			name = Debug;
+		};
+		EA709307B03CF08BECBB3B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		F4A63876B2A85B1E5E5C760A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.giveon.GiveOnFarm;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B44CCCED4E02091A74A06BD /* Build configuration list for PBXNativeTarget "GiveOnFarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				788EDBF19C8C6D7C9837C9E8 /* Debug */,
+				5E7AE6C4197B8D91667C4A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		951249CDAF9CAFF354277C68 /* Build configuration list for PBXNativeTarget "GiveOnFarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4A63876B2A85B1E5E5C760A /* Debug */,
+				4E55F0A2064538A1A1F2268B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FAF5F69452F34C84D61AB8C7 /* Build configuration list for PBXProject "GiveOnFarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA709307B03CF08BECBB3B28 /* Debug */,
+				63CD721AF189F09F43209DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 196DD48FCB1D1B1F93B6816D /* Project object */;
+}
