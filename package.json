@@ -1,0 +1,15 @@
+{
+  "name": "give-on",
+  "version": "0.1.0",
+  "description": "Give On — 기후변화로부터 생명을 지키는 AI 플랫폼",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "start": "npm run start --workspaces"
+  }
+}

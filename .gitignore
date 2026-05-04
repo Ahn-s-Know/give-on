@@ -1,0 +1,155 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv/
+venv/
+ENV/
+env/
+.env
+.env.local
+.env.*.local
+
+# FastAPI / Uvicorn
+*.log
+/tmp/
+
+# Node.js / npm
+node_modules/
+npm-debug.log
+npm-debug.log.*
+yarn-debug.log
+yarn-error.log
+lerna-debug.log
+.pnpm-debug.log
+dist/
+.next/
+out/
+.nuxt/
+.cache/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port/
+package-lock.json
+yarn.lock
+
+# iOS / Xcode
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/
+DerivedData/
+*.hmap
+*.ipa
+*.app.dSYM.zip
+*.dSYM.zip
+.DS_Store
+Pods/
+*.lock
+*.xcconfig.local
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Firebase / Credentials
+firebase-adminsdk.json
+googleService-Info.plist
+GoogleService-Info.plist
+*.json.sample
+.firebase/
+
+# Environment
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+migrations/versions/
+
+# OS
+*.exe
+*.zip
+*.dmg
+*.tar.gz
+
+# Build artifacts
+dist/
+build/
+*.o
+*.a
+*.so
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+.tmp
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Docker
+.dockerignore
+
+# Vercel
+.vercel
+.vercel.json
+
+# 내부 참고 자료 (공개 금지)
+docs/drafts/idea_climashelter_report.md
+docs/research/
+research/
+
+# 개인 메모 / 개인 개발 일정 (커밋 금지)
+docs/personal/
