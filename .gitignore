@@ -153,3 +153,5 @@ research/
 
 # 개인 메모 / 개인 개발 일정 (커밋 금지)
 docs/personal/
+storybook-static/
+.turbo/
