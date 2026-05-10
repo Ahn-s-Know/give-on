@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04712B1E896A446D8569D5ED /* DesignSystemGOFTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254AAA20941C433ABD0BA799 /* DesignSystemGOFTypography.swift */; };
+		098D270802DD9029A005B219 /* CampaignConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5B7F02619D58A2CAC414FB /* CampaignConfirmationViewModel.swift */; };
+		0B27AE2F6F817F30C78D26A5 /* DamageReportInputMethodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DB2F0D6635B6433C6193D3 /* DamageReportInputMethodViewModel.swift */; };
+		0EA5E8F8E9A17579F431F323 /* DesignSystemGOFColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BDD24A13DEAD0165EC0C2F9 /* DesignSystemGOFColors.swift */; };
+		1C1A4F6640A23F24D62958E3 /* DesignSystemGOFComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7D6A3C100352CD0878CD81 /* DesignSystemGOFComponents.swift */; };
+		21DA036571C8A3DA743F622F /* FarmStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB696F63890E7C6BB58D862 /* FarmStatusView.swift */; };
+		2EA4085538589C80F3AD9AB8 /* MediaRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22DCBB5D75A88B73C554A85 /* MediaRegistrationView.swift */; };
+		37E3073E60255891C969CA1E /* MyPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E700EDE4F7E52D48F81E3EA9 /* MyPageViewModel.swift */; };
+		48B56F43068802C9A2B0FC56 /* FarmLocationRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E16268A0206040626FAC03 /* FarmLocationRegistrationView.swift */; };
+		4CB8C06B5FA1E8C863E0CBA0 /* CampaignStoryCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF3FC440E5A9299416CB13 /* CampaignStoryCreationViewModel.swift */; };
+		53B7DB8886D233514339D822 /* GOFTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3ECA38A780241FF39D8BCCA /* GOFTabView.swift */; };
+		5F2DA47E23C9B0683455EB58 /* FarmRegistrationEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB860DE84BD245455E978526 /* FarmRegistrationEntryView.swift */; };
+		5F801FEF3A495F5904CB1929 /* FarmRegistrationEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D398B4CE0F3768C35658A37F /* FarmRegistrationEntryViewModel.swift */; };
+		640DB65CE78011B79891C1B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB70FF00E37A5C94E748CDE3 /* Foundation.framework */; };
+		670FA5C8DA1FB09D9A12AA18 /* DamageReportCompletionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D172CE9644D94D1B27FC0338 /* DamageReportCompletionViewModel.swift */; };
+		74D3FEA8BB1A2289C1F84567 /* MyPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AF8361C7873F8B5174AB38 /* MyPageView.swift */; };
+		7BE3B569F5023A079CA64141 /* DamageInformationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D69F4A0AB2C1DDF8FD0F0D8 /* DamageInformationViewModel.swift */; };
+		7D21E74CFA94C6A0B51342AA /* FarmStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C473D741BF1A176583F23393 /* FarmStatusViewModel.swift */; };
+		85D555D3B141DBBDC962E210 /* GiveOnFarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D10CC728BBE892935DC7A97 /* GiveOnFarmApp.swift */; };
+		8D32F045A1C286D82176BF25 /* CampaignStoryCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897B980B52B48923CD5A57C7 /* CampaignStoryCreationView.swift */; };
+		9251FCDAC1A86073939C7D7C /* DamageReportCompletionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19E27B2B3FBDCA7C6D4418D /* DamageReportCompletionView.swift */; };
+		98B24CD40B43F64DC4FF5972 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F663C6BD8459F192589623 /* SettingsView.swift */; };
+		9AC2BE79D44172B7C469CCC7 /* DamageInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBB80828F290B76AB4F2DF0 /* DamageInformationView.swift */; };
+		9B4606B4B1DA325A61E40AB3 /* CampaignConfirmationModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B207F25FBAC476F2767D594F /* CampaignConfirmationModal.swift */; };
+		9B99C33498CECED0380162B4 /* FarmLocationRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E953F089E5A5FC2C5677A71 /* FarmLocationRegistrationViewModel.swift */; };
+		AC2AD2BCF9634CDD91271572 /* DesignSystemGOFViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7508E5769E10479FD1FF23 /* DesignSystemGOFViewExtensions.swift */; };
+		B47B680FD768A22E1F235439 /* CampaignListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC6FE4596A9709A1751FD12 /* CampaignListView.swift */; };
+		B9DA43E2C88E3C5E19660538 /* DesignSystemREADME.md in Resources */ = {isa = PBXBuildFile; fileRef = CAA94303C85DF2B19F94BE0A /* DesignSystemREADME.md */; };
+		C58A458165747CFBE315CFBB /* DamageReportInputMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5609E98E96AA220C4151A81 /* DamageReportInputMethodView.swift */; };
+		C808AB0384A9C6F48158BFB2 /* DesignSystemGOFSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760445CAF5BD121E4754E83D /* DesignSystemGOFSpacing.swift */; };
+		C87AEA0B78AB3A03F607B4C6 /* DesignSystemGOFButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC1026BADB330A41B42D6CB /* DesignSystemGOFButtonStyles.swift */; };
+		EC9650A1E2F9CF933E5BE48E /* DamageReportMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267858546BAFD704A95BEF16 /* DamageReportMainView.swift */; };
+		F4B35A61C068D1C252BE868D /* DashedBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC0B4FB47931AF200447A30 /* DashedBorder.swift */; };
+		F5F6B061E7809C88A254E0C7 /* MediaRegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D15504886C848C162BB155 /* MediaRegistrationViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1DC6FE4596A9709A1751FD12 /* CampaignListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignListView.swift; sourceTree = "<group>"; };
+		1E953F089E5A5FC2C5677A71 /* FarmLocationRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmLocationRegistrationViewModel.swift; sourceTree = "<group>"; };
+		254AAA20941C433ABD0BA799 /* DesignSystemGOFTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemGOFTypography.swift; sourceTree = "<group>"; };
+		267858546BAFD704A95BEF16 /* DamageReportMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageReportMainView.swift; sourceTree = "<group>"; };
+		2BDD24A13DEAD0165EC0C2F9 /* DesignSystemGOFColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemGOFColors.swift; sourceTree = "<group>"; };
+		2D10CC728BBE892935DC7A97 /* GiveOnFarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveOnFarmApp.swift; sourceTree = "<group>"; };
+		30E16268A0206040626FAC03 /* FarmLocationRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmLocationRegistrationView.swift; sourceTree = "<group>"; };
+		33DF3FC440E5A9299416CB13 /* CampaignStoryCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignStoryCreationViewModel.swift; sourceTree = "<group>"; };
+		4D69F4A0AB2C1DDF8FD0F0D8 /* DamageInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageInformationViewModel.swift; sourceTree = "<group>"; };
+		5C7508E5769E10479FD1FF23 /* DesignSystemGOFViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemGOFViewExtensions.swift; sourceTree = "<group>"; };
+		62D15504886C848C162BB155 /* MediaRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRegistrationViewModel.swift; sourceTree = "<group>"; };
+		6A7D6A3C100352CD0878CD81 /* DesignSystemGOFComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemGOFComponents.swift; sourceTree = "<group>"; };
+		760445CAF5BD121E4754E83D /* DesignSystemGOFSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemGOFSpacing.swift; sourceTree = "<group>"; };
+		77DB2F0D6635B6433C6193D3 /* DamageReportInputMethodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageReportInputMethodViewModel.swift; sourceTree = "<group>"; };
+		897B980B52B48923CD5A57C7 /* CampaignStoryCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignStoryCreationView.swift; sourceTree = "<group>"; };
+		94AF8361C7873F8B5174AB38 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
+		AB70FF00E37A5C94E748CDE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AB860DE84BD245455E978526 /* FarmRegistrationEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmRegistrationEntryView.swift; sourceTree = "<group>"; };
+		AC01AF75C95177EBD88F2592 /* GiveOnFarm.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GiveOnFarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19E27B2B3FBDCA7C6D4418D /* DamageReportCompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageReportCompletionView.swift; sourceTree = "<group>"; };
+		B207F25FBAC476F2767D594F /* CampaignConfirmationModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignConfirmationModal.swift; sourceTree = "<group>"; };
+		B3ECA38A780241FF39D8BCCA /* GOFTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOFTabView.swift; sourceTree = "<group>"; };
+		B5609E98E96AA220C4151A81 /* DamageReportInputMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageReportInputMethodView.swift; sourceTree = "<group>"; };
+		BFB696F63890E7C6BB58D862 /* FarmStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmStatusView.swift; sourceTree = "<group>"; };
+		C473D741BF1A176583F23393 /* FarmStatusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmStatusViewModel.swift; sourceTree = "<group>"; };
+		CAA94303C85DF2B19F94BE0A /* DesignSystemREADME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DesignSystemREADME.md; sourceTree = "<group>"; };
+		CBBB80828F290B76AB4F2DF0 /* DamageInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageInformationView.swift; sourceTree = "<group>"; };
+		D172CE9644D94D1B27FC0338 /* DamageReportCompletionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageReportCompletionViewModel.swift; sourceTree = "<group>"; };
+		D398B4CE0F3768C35658A37F /* FarmRegistrationEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmRegistrationEntryViewModel.swift; sourceTree = "<group>"; };
+		DAC1026BADB330A41B42D6CB /* DesignSystemGOFButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemGOFButtonStyles.swift; sourceTree = "<group>"; };
+		E22DCBB5D75A88B73C554A85 /* MediaRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRegistrationView.swift; sourceTree = "<group>"; };
+		E700EDE4F7E52D48F81E3EA9 /* MyPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewModel.swift; sourceTree = "<group>"; };
+		E9F663C6BD8459F192589623 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FBC0B4FB47931AF200447A30 /* DashedBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedBorder.swift; sourceTree = "<group>"; };
+		FF5B7F02619D58A2CAC414FB /* CampaignConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignConfirmationViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE8D32CF32CF7FC4FC778936 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640DB65CE78011B79891C1B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C2B472BA8EA9F5388598799 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				94AF8361C7873F8B5174AB38 /* MyPageView.swift */,
+				E700EDE4F7E52D48F81E3EA9 /* MyPageViewModel.swift */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		18877D847AC54A6F7DE9C797 /* MediaRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				E22DCBB5D75A88B73C554A85 /* MediaRegistrationView.swift */,
+				62D15504886C848C162BB155 /* MediaRegistrationViewModel.swift */,
+			);
+			path = MediaRegistration;
+			sourceTree = "<group>";
+		};
+		2F5A882E51A5FEA088E70959 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				DCFAADB0EDD5EC5313ED6AD9 /* CampaignConfirmation */,
+				70C72C70F739C49BF16CF45C /* CampaignStoryCreation */,
+				43B6799ACBC6614F37A631AA /* DamageInformation */,
+				680FFCA1C459D46843EC61C3 /* DamageReportCompletion */,
+				E39120745FA828ED1E7A3BE3 /* DamageReportInputMethod */,
+				B171D1D1A82EC8B1987CE3DA /* FarmLocationRegistration */,
+				D9F878E3BBEF0B63DEBDFDCE /* FarmRegistrationEntry */,
+				86609D5B9324CEC7137F369F /* FarmStatus */,
+				18877D847AC54A6F7DE9C797 /* MediaRegistration */,
+				0C2B472BA8EA9F5388598799 /* MyPage */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		43B6799ACBC6614F37A631AA /* DamageInformation */ = {
+			isa = PBXGroup;
+			children = (
+				CBBB80828F290B76AB4F2DF0 /* DamageInformationView.swift */,
+				4D69F4A0AB2C1DDF8FD0F0D8 /* DamageInformationViewModel.swift */,
+			);
+			path = DamageInformation;
+			sourceTree = "<group>";
+		};
+		680FFCA1C459D46843EC61C3 /* DamageReportCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				B19E27B2B3FBDCA7C6D4418D /* DamageReportCompletionView.swift */,
+				D172CE9644D94D1B27FC0338 /* DamageReportCompletionViewModel.swift */,
+			);
+			path = DamageReportCompletion;
+			sourceTree = "<group>";
+		};
+		70C72C70F739C49BF16CF45C /* CampaignStoryCreation */ = {
+			isa = PBXGroup;
+			children = (
+				897B980B52B48923CD5A57C7 /* CampaignStoryCreationView.swift */,
+				33DF3FC440E5A9299416CB13 /* CampaignStoryCreationViewModel.swift */,
+				FBC0B4FB47931AF200447A30 /* DashedBorder.swift */,
+				5C7508E5769E10479FD1FF23 /* DesignSystemGOFViewExtensions.swift */,
+				CAA94303C85DF2B19F94BE0A /* DesignSystemREADME.md */,
+			);
+			path = CampaignStoryCreation;
+			sourceTree = "<group>";
+		};
+		86609D5B9324CEC7137F369F /* FarmStatus */ = {
+			isa = PBXGroup;
+			children = (
+				1DC6FE4596A9709A1751FD12 /* CampaignListView.swift */,
+				267858546BAFD704A95BEF16 /* DamageReportMainView.swift */,
+				BFB696F63890E7C6BB58D862 /* FarmStatusView.swift */,
+				C473D741BF1A176583F23393 /* FarmStatusViewModel.swift */,
+				B3ECA38A780241FF39D8BCCA /* GOFTabView.swift */,
+				E9F663C6BD8459F192589623 /* SettingsView.swift */,
+			);
+			path = FarmStatus;
+			sourceTree = "<group>";
+		};
+		A43ED5B32D360BC7B7D209BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB70FF00E37A5C94E748CDE3 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B171D1D1A82EC8B1987CE3DA /* FarmLocationRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				30E16268A0206040626FAC03 /* FarmLocationRegistrationView.swift */,
+				1E953F089E5A5FC2C5677A71 /* FarmLocationRegistrationViewModel.swift */,
+			);
+			path = FarmLocationRegistration;
+			sourceTree = "<group>";
+		};
+		C967A611D36AC776CF8FC170 = {
+			isa = PBXGroup;
+			children = (
+				2F5A882E51A5FEA088E70959 /* Features */,
+				ED462AAC70EEC533C2CCFC24 /* GiveOnFarm */,
+				A43ED5B32D360BC7B7D209BE /* Frameworks */,
+				E0440F8C62B2B35DAA691226 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9F878E3BBEF0B63DEBDFDCE /* FarmRegistrationEntry */ = {
+			isa = PBXGroup;
+			children = (
+				AB860DE84BD245455E978526 /* FarmRegistrationEntryView.swift */,
+				D398B4CE0F3768C35658A37F /* FarmRegistrationEntryViewModel.swift */,
+			);
+			path = FarmRegistrationEntry;
+			sourceTree = "<group>";
+		};
+		DCFAADB0EDD5EC5313ED6AD9 /* CampaignConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				B207F25FBAC476F2767D594F /* CampaignConfirmationModal.swift */,
+				FF5B7F02619D58A2CAC414FB /* CampaignConfirmationViewModel.swift */,
+				DAC1026BADB330A41B42D6CB /* DesignSystemGOFButtonStyles.swift */,
+				2BDD24A13DEAD0165EC0C2F9 /* DesignSystemGOFColors.swift */,
+				6A7D6A3C100352CD0878CD81 /* DesignSystemGOFComponents.swift */,
+				760445CAF5BD121E4754E83D /* DesignSystemGOFSpacing.swift */,
+				254AAA20941C433ABD0BA799 /* DesignSystemGOFTypography.swift */,
+			);
+			path = CampaignConfirmation;
+			sourceTree = "<group>";
+		};
+		E0440F8C62B2B35DAA691226 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC01AF75C95177EBD88F2592 /* GiveOnFarm.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E39120745FA828ED1E7A3BE3 /* DamageReportInputMethod */ = {
+			isa = PBXGroup;
+			children = (
+				B5609E98E96AA220C4151A81 /* DamageReportInputMethodView.swift */,
+				77DB2F0D6635B6433C6193D3 /* DamageReportInputMethodViewModel.swift */,
+			);
+			path = DamageReportInputMethod;
+			sourceTree = "<group>";
+		};
+		ED462AAC70EEC533C2CCFC24 /* GiveOnFarm */ = {
+			isa = PBXGroup;
+			children = (
+				2D10CC728BBE892935DC7A97 /* GiveOnFarmApp.swift */,
+			);
+			path = GiveOnFarm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1424096EA4A85B3034EB0AA /* GiveOnFarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 951249CDAF9CAFF354277C68 /* Build configuration list for PBXNativeTarget "GiveOnFarm" */;
+			buildPhases = (
+				996BBFB0478EE7E17DA666D4 /* Sources */,
+				A26CC21E6D5E38739861838E /* Resources */,
+				AE8D32CF32CF7FC4FC778936 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GiveOnFarm;
+			packageProductDependencies = (
+			);
+			productName = GiveOnFarm;
+			productReference = AC01AF75C95177EBD88F2592 /* GiveOnFarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		196DD48FCB1D1B1F93B6816D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F1424096EA4A85B3034EB0AA = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FAF5F69452F34C84D61AB8C7 /* Build configuration list for PBXProject "GiveOnFarm" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C967A611D36AC776CF8FC170;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E0440F8C62B2B35DAA691226 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1424096EA4A85B3034EB0AA /* GiveOnFarm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A26CC21E6D5E38739861838E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9DA43E2C88E3C5E19660538 /* DesignSystemREADME.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		996BBFB0478EE7E17DA666D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4606B4B1DA325A61E40AB3 /* CampaignConfirmationModal.swift in Sources */,
+				098D270802DD9029A005B219 /* CampaignConfirmationViewModel.swift in Sources */,
+				B47B680FD768A22E1F235439 /* CampaignListView.swift in Sources */,
+				8D32F045A1C286D82176BF25 /* CampaignStoryCreationView.swift in Sources */,
+				4CB8C06B5FA1E8C863E0CBA0 /* CampaignStoryCreationViewModel.swift in Sources */,
+				9AC2BE79D44172B7C469CCC7 /* DamageInformationView.swift in Sources */,
+				7BE3B569F5023A079CA64141 /* DamageInformationViewModel.swift in Sources */,
+				9251FCDAC1A86073939C7D7C /* DamageReportCompletionView.swift in Sources */,
+				670FA5C8DA1FB09D9A12AA18 /* DamageReportCompletionViewModel.swift in Sources */,
+				C58A458165747CFBE315CFBB /* DamageReportInputMethodView.swift in Sources */,
+				0B27AE2F6F817F30C78D26A5 /* DamageReportInputMethodViewModel.swift in Sources */,
+				EC9650A1E2F9CF933E5BE48E /* DamageReportMainView.swift in Sources */,
+				F4B35A61C068D1C252BE868D /* DashedBorder.swift in Sources */,
+				C87AEA0B78AB3A03F607B4C6 /* DesignSystemGOFButtonStyles.swift in Sources */,
+				0EA5E8F8E9A17579F431F323 /* DesignSystemGOFColors.swift in Sources */,
+				1C1A4F6640A23F24D62958E3 /* DesignSystemGOFComponents.swift in Sources */,
+				C808AB0384A9C6F48158BFB2 /* DesignSystemGOFSpacing.swift in Sources */,
+				04712B1E896A446D8569D5ED /* DesignSystemGOFTypography.swift in Sources */,
+				AC2AD2BCF9634CDD91271572 /* DesignSystemGOFViewExtensions.swift in Sources */,
+				48B56F43068802C9A2B0FC56 /* FarmLocationRegistrationView.swift in Sources */,
+				9B99C33498CECED0380162B4 /* FarmLocationRegistrationViewModel.swift in Sources */,
+				5F2DA47E23C9B0683455EB58 /* FarmRegistrationEntryView.swift in Sources */,
+				5F801FEF3A495F5904CB1929 /* FarmRegistrationEntryViewModel.swift in Sources */,
+				21DA036571C8A3DA743F622F /* FarmStatusView.swift in Sources */,
+				7D21E74CFA94C6A0B51342AA /* FarmStatusViewModel.swift in Sources */,
+				53B7DB8886D233514339D822 /* GOFTabView.swift in Sources */,
+				85D555D3B141DBBDC962E210 /* GiveOnFarmApp.swift in Sources */,
+				2EA4085538589C80F3AD9AB8 /* MediaRegistrationView.swift in Sources */,
+				F5F6B061E7809C88A254E0C7 /* MediaRegistrationViewModel.swift in Sources */,
+				74D3FEA8BB1A2289C1F84567 /* MyPageView.swift in Sources */,
+				37E3073E60255891C969CA1E /* MyPageViewModel.swift in Sources */,
+				98B24CD40B43F64DC4FF5972 /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4E55F0A2064538A1A1F2268B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.giveon.farm;
+				PRODUCT_NAME = GiveOnFarm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63CD721AF189F09F43209DB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EA709307B03CF08BECBB3B28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F4A63876B2A85B1E5E5C760A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.giveon.farm;
+				PRODUCT_NAME = GiveOnFarm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		951249CDAF9CAFF354277C68 /* Build configuration list for PBXNativeTarget "GiveOnFarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4A63876B2A85B1E5E5C760A /* Debug */,
+				4E55F0A2064538A1A1F2268B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FAF5F69452F34C84D61AB8C7 /* Build configuration list for PBXProject "GiveOnFarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA709307B03CF08BECBB3B28 /* Debug */,
+				63CD721AF189F09F43209DB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 196DD48FCB1D1B1F93B6816D /* Project object */;
+}
