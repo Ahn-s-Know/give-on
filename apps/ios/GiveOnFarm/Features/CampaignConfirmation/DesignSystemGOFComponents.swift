@@ -242,7 +242,6 @@ struct GOFLoadingOverlay: View {
     var body: some View {
         ZStack {
             Color.gof.black.opacity(0.4)
-                .ignoresSafeArea()
             
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle(tint: .gof.white))

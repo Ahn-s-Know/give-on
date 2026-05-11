@@ -57,7 +57,7 @@ struct GOFOutlineButtonStyle: ButtonStyle {
             .foregroundColor(isSelected ? .gof.accentGreen : .gof.textTertiary)
             .frame(height: .gof.iconBack)
             .frame(maxWidth: .infinity)
-            .background(isSelected ? .gof.backgroundSelected : .gof.white)
+            .background(isSelected ? Color.gof.backgroundSelected : .gof.white)
             .cornerRadius(.gof.radiusFull)
             .overlay(
                 RoundedRectangle(cornerRadius: .gof.radiusFull)
@@ -131,7 +131,7 @@ struct GOFCheckboxButtonStyle: ButtonStyle {
             Spacer()
         }
         .padding(.gof.md - 3)
-        .background(isSelected ? .gof.backgroundSelectedLight : .gof.white)
+        .background(isSelected ? Color.gof.backgroundSelectedLight : .gof.white)
         .cornerRadius(.gof.radiusMedium)
         .overlay(
             RoundedRectangle(cornerRadius: .gof.radiusMedium)

@@ -8,6 +8,8 @@ struct GiveOnFarmApp: App {
     @AppStorage("isRegistered") private var isRegistered: Bool = false
     #endif
 
+    init() { }
+
     var body: some Scene {
         WindowGroup {
             if isRegistered {

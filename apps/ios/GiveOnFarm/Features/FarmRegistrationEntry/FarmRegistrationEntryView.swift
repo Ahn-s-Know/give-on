@@ -8,7 +8,6 @@ struct FarmRegistrationEntryView: View {
     var body: some View {
         ZStack {
             Color(UIColor(red: 0.973, green: 0.973, blue: 0.973, alpha: 1))
-                .ignoresSafeArea()
 
             VStack(spacing: 0) {
                 Spacer()
@@ -83,7 +82,6 @@ struct FarmRegistrationEntryView: View {
 
             if isVoiceMode {
                 Color.black.opacity(0.4)
-                    .ignoresSafeArea()
 
                 VStack {
                     Spacer()
@@ -124,7 +122,6 @@ struct FarmRegistrationEntryView: View {
 
             if isManualMode {
                 Color.black.opacity(0.4)
-                    .ignoresSafeArea()
 
                 VStack {
                     Spacer()
@@ -180,9 +177,10 @@ struct FarmRegistrationEntryView: View {
                 }
             }
         }
+        .ignoresSafeArea(edges: .all)
     }
 }
 
 #Preview {
-    FarmRegistrationEntryView(isRegistered: .constant(false))
+    FarmRegistrationEntryView(isRegistered: .constant(true))
 }

@@ -1,0 +1,49 @@
+name: GiveOnFarm
+options:
+  bundleIdPrefix: com.giveon
+  deploymentTarget:
+    iOS: "15.0"
+
+targets:
+  GiveOnFarm:
+    type: application
+    platform: iOS
+    deploymentTarget: "15.0"
+    sources:
+      - path: GiveOnFarm
+      - path: Features
+    dependencies:
+      - sdk: Foundation.framework
+    settings:
+      PRODUCT_NAME: GiveOnFarm
+      PRODUCT_BUNDLE_IDENTIFIER: com.giveon.farm
+      CODE_SIGN_IDENTITY: "Apple Development"
+      CODE_SIGN_STYLE: Automatic
+      DEVELOPMENT_TEAM: ""
+      SWIFT_VERSION: "5.9"
+      IPHONEOS_DEPLOYMENT_TARGET: "15.0"
+      ENABLE_BITCODE: false
+      SKIP_INSTALL: false
+      GENERATE_INFOPLIST_FILE: true
+      TARGETED_DEVICE_FAMILY: "1"
+    plistEntries:
+      UIRequiresFullScreen: true
+      UIDeviceFamily: [1]
+      UIStatusBarStyle: UIStatusBarStyleDefault
+      UIViewControllerBasedStatusBarAppearance: false
+
+schemes:
+  GiveOnFarm:
+    build:
+      targets:
+        GiveOnFarm: all
+    run:
+      config: Debug
+    test:
+      config: Debug
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release

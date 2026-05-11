@@ -54,6 +54,7 @@
 		33DF3FC440E5A9299416CB13 /* CampaignStoryCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignStoryCreationViewModel.swift; sourceTree = "<group>"; };
 		4D69F4A0AB2C1DDF8FD0F0D8 /* DamageInformationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageInformationViewModel.swift; sourceTree = "<group>"; };
 		5C7508E5769E10479FD1FF23 /* DesignSystemGOFViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemGOFViewExtensions.swift; sourceTree = "<group>"; };
+		5F1FF7A92FB08CE300A05102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		62D15504886C848C162BB155 /* MediaRegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaRegistrationViewModel.swift; sourceTree = "<group>"; };
 		6A7D6A3C100352CD0878CD81 /* DesignSystemGOFComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemGOFComponents.swift; sourceTree = "<group>"; };
 		760445CAF5BD121E4754E83D /* DesignSystemGOFSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignSystemGOFSpacing.swift; sourceTree = "<group>"; };
@@ -62,7 +63,7 @@
 		94AF8361C7873F8B5174AB38 /* MyPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageView.swift; sourceTree = "<group>"; };
 		AB70FF00E37A5C94E748CDE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AB860DE84BD245455E978526 /* FarmRegistrationEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FarmRegistrationEntryView.swift; sourceTree = "<group>"; };
-		AC01AF75C95177EBD88F2592 /* GiveOnFarm.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GiveOnFarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC01AF75C95177EBD88F2592 /* GiveOnFarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiveOnFarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B19E27B2B3FBDCA7C6D4418D /* DamageReportCompletionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DamageReportCompletionView.swift; sourceTree = "<group>"; };
 		B207F25FBAC476F2767D594F /* CampaignConfirmationModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignConfirmationModal.swift; sourceTree = "<group>"; };
 		B3ECA38A780241FF39D8BCCA /* GOFTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOFTabView.swift; sourceTree = "<group>"; };
@@ -241,6 +242,7 @@
 		ED462AAC70EEC533C2CCFC24 /* GiveOnFarm */ = {
 			isa = PBXGroup;
 			children = (
+				5F1FF7A92FB08CE300A05102 /* Info.plist */,
 				2D10CC728BBE892935DC7A97 /* GiveOnFarmApp.swift */,
 			);
 			path = GiveOnFarm;
@@ -365,6 +367,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GiveOnFarm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -375,7 +378,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -507,6 +510,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GiveOnFarm/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -517,7 +521,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 5.9;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};

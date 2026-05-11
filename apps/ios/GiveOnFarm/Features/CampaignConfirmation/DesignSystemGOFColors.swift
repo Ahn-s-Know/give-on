@@ -69,19 +69,41 @@ enum GOFColors {
     
     /// 에러/경고 빨강
     static let error = Color(UIColor(red: 0.737, green: 0.102, blue: 0.102, alpha: 1))
-    
+
     /// 성공 녹색
     static let success = primaryGreen
-    
+
     /// 흰색
     static let white = Color.white
-    
+
     /// 검정 (오버레이)
     static let black = Color.black
+
+    // MARK: - Risk Level Colors (위험도 신호등)
+
+    /// 안전 (#52b788)
+    static let riskSafe = Color(UIColor(red: 0.322, green: 0.718, blue: 0.533, alpha: 1))
+
+    /// 주의 (#f4a261)
+    static let riskCaution = Color(UIColor(red: 0.957, green: 0.635, blue: 0.380, alpha: 1))
+
+    /// 위험 (#e07a5f)
+    static let riskDanger = Color(UIColor(red: 0.878, green: 0.478, blue: 0.373, alpha: 1))
+
+    /// 긴급 (#e63946) — Harvest Red
+    static let riskEmergency = Color(UIColor(red: 0.902, green: 0.224, blue: 0.275, alpha: 1))
+
+    // MARK: - Emergency Surface
+
+    /// 긴급 상태 전체 배경 (#1a2e1e) — 짙은 녹색
+    static let surfaceDark = Color(UIColor(red: 0.102, green: 0.180, blue: 0.118, alpha: 1))
+
+    /// 긴급 배경 위 텍스트 (#f0f0ec) — 따뜻한 오프화이트
+    static let onDark = Color(UIColor(red: 0.941, green: 0.941, blue: 0.925, alpha: 1))
 }
 
 // MARK: - Color Extension for easier access
 
-extension Color {
+internal extension Color {
     static let gof = GOFColors.self
 }

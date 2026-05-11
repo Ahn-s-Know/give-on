@@ -6,10 +6,15 @@ struct SettingsView: View {
     @State private var weatherAlertsEnabled = true
     
     var body: some View {
+        content
+    }
+    
+    var content: some View {
         VStack(spacing: 0) {
             // 헤더
             HStack {
                 Text("설정")
+
                     .font(.gof.largeTitle)
                     .foregroundColor(.gof.textPrimary)
                     .tracking(-0.24)
@@ -63,8 +68,15 @@ struct SettingsView: View {
             }
             .background(Color.gof.backgroundPrimary)
         }
+        .background {
+            VStack(spacing: 0) {
+                Color.gof.white
+                Color.gof.backgroundPrimary
+            }
+            .ignoresSafeArea()
+        }
     }
-    
+
     // MARK: - Subviews
     
     private var profileSection: some View {

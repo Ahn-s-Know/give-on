@@ -5,26 +5,29 @@ struct DamageReportMainView: View {
     @State private var showReportFlow = false
     
     var body: some View {
-        NavigationView {
-            VStack(spacing: 0) {
-                // 헤더
-                HStack {
-                    Text("피해 신고")
-                        .font(.gof.largeTitle)
-                        .foregroundColor(.gof.textPrimary)
-                        .tracking(-0.24)
-                    
-                    Spacer()
-                }
-                .padding(.horizontal, .gof.lg)
-                .frame(height: .gof.heightHeader)
-                .background(Color.gof.white)
-                .overlay(
-                    Rectangle()
-                        .fill(Color.gof.borderDivider)
-                        .frame(height: .gof.borderThin),
-                    alignment: .bottom
-                )
+        content
+    }
+    
+    var content: some View {
+        VStack(spacing: 0) {
+            // 헤더
+            HStack {
+                Text("피해 신고")
+                    .font(.gof.largeTitle)
+                    .foregroundColor(.gof.textPrimary)
+                    .tracking(-0.24)
+
+                Spacer()
+            }
+            .padding(.horizontal, .gof.lg)
+            .frame(height: .gof.heightHeader)
+            .background(Color.gof.white)
+            .overlay(
+                Rectangle()
+                    .fill(Color.gof.borderDivider)
+                    .frame(height: .gof.borderThin),
+                alignment: .bottom
+            )
                 
                 ScrollView {
                     VStack(spacing: .gof.xxl) {
@@ -61,12 +64,16 @@ struct DamageReportMainView: View {
                     .padding(.gof.lg)
                 }
                 .background(Color.gof.backgroundPrimary)
+        }
+        .background {
+            VStack(spacing: 0) {
+                Color.gof.white
+                Color.gof.backgroundPrimary
             }
-            .navigationBarHidden(true)
-            .fullScreenCover(isPresented: $showReportFlow) {
-                // 피해 신고 플로우 시작
-                DamageLocationView()
-            }
+            .ignoresSafeArea()
+        }
+        .fullScreenCover(isPresented: $showReportFlow) {
+            DamageReportInputMethodView()
         }
     }
 }
