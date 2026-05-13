@@ -1,0 +1,18 @@
+@import "@give-on/theme/tokens.css";
+@import "tailwindcss";
+
+html,
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+

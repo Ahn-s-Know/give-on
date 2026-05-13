@@ -4,14 +4,14 @@
 
 Give On is a climate-disaster response donation platform that connects citizens with affected farmers through AI-generated campaigns and delivers ugly produce as tangible rewards. The design language must carry three emotional registers simultaneously: **urgency** (climate disaster is happening now), **warmth** (a real farmer is waiting), and **trust** (your money becomes real food on your table).
 
-The base canvas is **warm off-white** (`{colors.canvas}` — #fafaf8) rather than pure white — a deliberate choice to evoke the natural, earthy quality of farmland and produce. The primary accent is **Earth Green** (`{colors.primary}` — #2d6a4f), a deep forest green that signals nature, growth, and sustainability. A single urgency accent, **Harvest Red** (`{colors.urgency}` — #e63946), is reserved exclusively for disaster alerts, emergency risk indicators, and time-sensitive campaign banners. It never appears on decorative elements.
+The base canvas is **soft neutral light** (`{colors.canvas}` — #f7f8fa) rather than warm beige or pure white. This follows the visual clarity of modern Korean mobile products such as Toss: bright, quiet, and highly legible, while still letting produce photography carry warmth. The primary accent is **Fresh Green** (`{colors.primary}` — #1f7a5a), a cleaner and more contemporary green that feels trustworthy without making the app look heavy. A single urgency accent, **Signal Red** (`{colors.urgency}` — #e5484d), is reserved exclusively for disaster alerts, emergency risk indicators, and time-sensitive campaign banners. It never appears on decorative elements.
 
 Type runs **Pretendard** (the standard Korean-language variable font), falling back to **Noto Sans KR** and the system stack. Korean-first typography means line-heights run slightly looser than Latin-only systems — body copy sits at 1.7 rather than Airbnb's 1.5 to accommodate Hangul stroke density.
 
-The shape language is **organic but grounded**. Campaign cards use 12px radius (`{rounded.md}`), the main search/filter bar uses 8px (`{rounded.sm}`), produce photo thumbnails clip at 16px (`{rounded.lg}`), and the urgency alert banners use a flat 4px (`{rounded.xs}`) to feel serious rather than playful. Full pill shapes (`{rounded.full}`) appear only on status badges (risk level tags, "긴급" labels) and the primary CTA button.
+The shape language is **clean, quiet, and product-like**. It should feel closer to Toss than to a lifestyle campaign site. Campaign cards use 16px radius (`{rounded.md}`), selection cards and panels use 20px (`{rounded.lg}`), and small controls use 12px (`{rounded.sm}`). Full pill shapes (`{rounded.full}`) are reserved for badges and compact chips. Large app CTAs should prefer rounded rectangles over pills to avoid a dated or overly soft impression.
 
 **Key Characteristics:**
-- Dual-accent system: `{colors.primary}` (#2d6a4f Earth Green) for all positive actions and brand moments. `{colors.urgency}` (#e63946 Harvest Red) exclusively for disaster urgency signals. They never appear together on the same element.
+- Dual-accent system: `{colors.primary}` (#1f7a5a Fresh Green) for all positive actions and brand moments. `{colors.urgency}` (#e5484d Signal Red) exclusively for disaster urgency signals. They never appear together on the same element.
 - Korean-first typography: `Pretendard` variable font. Body at 16px / 400 / line-height 1.7. Display at 24–32px / 700. Modest weights — visual hierarchy comes from the produce photography and farmer portraits, not typographic muscle.
 - Photo-led campaign cards: the ugly produce photograph is the emotional anchor of every donation card. The design system trusts the imperfect textures of hail-scarred apples and sun-scorched peppers to carry visual weight. Never crop or filter produce photos — raw imperfection is the point.
 - Risk level traffic light: the four-state risk indicator (safe / caution / danger / emergency) is the signature UI element of the Farm app. Color-coded with semantic tokens (`{colors.risk-safe}`, `{colors.risk-caution}`, `{colors.risk-danger}`, `{colors.risk-emergency}`), it must be immediately legible at a glance from across a room — it is a life-and-limb signal for farmers.
@@ -24,50 +24,61 @@ The shape language is **organic but grounded**. Campaign cards use 12px radius (
 
 ### Brand & Accent
 
-- **Earth Green** (`{colors.primary}` — #2d6a4f): The single brand color. Used for primary CTA backgrounds ("기부하기", "등록하기"), the farm app's active nav indicator, the heart/save state on campaign cards, progress bar fill, and the Give On wordmark. Appears in perhaps 10% of surface area — the canvas and photography carry the rest.
-- **Earth Green Active** (`{colors.primary-active}` — #1b4332): Press / pointer-down variant. Deeper forest tone, used on `{component.button-primary-active}`.
-- **Earth Green Disabled** (`{colors.primary-disabled}` — #b7dbc8): Pale mint tint on disabled CTAs.
-- **Earth Green Light** (`{colors.primary-light}` — #d8f3dc): Very light green surface used as the background for progress indicators, "모집 완료" completion badges, and positive status chips.
-- **Harvest Red** (`{colors.urgency}` — #e63946): Urgency-only accent. Applied exclusively to: emergency/danger risk level indicators, disaster alert banners, the "긴급" campaign badge, and FCM push notification icons. Never used decoratively. Never paired with Earth Green on the same element.
-- **Harvest Red Light** (`{colors.urgency-light}` — #fde8e8): Pale urgency tint — background fill for inline alert cards and the emergency risk panel.
-- **Amber Warning** (`{colors.warning}` — #f4a261): The "caution" risk level. Warm amber sits between safe green and danger red in the traffic-light sequence. Also used for "주의" badges and moderate weather alerts.
-- **Amber Light** (`{colors.warning-light}` — #fef0e4): Background fill for caution-level alert panels.
+- **Fresh Green** (`{colors.primary}` — #1f7a5a): The single brand color. Used for primary CTA backgrounds, active navigation, selected cards, key progress fill, and the Give On wordmark. Use it sparingly so the interface stays calm.
+- **Fresh Green Active** (`{colors.primary-active}` — #176448): Press / pointer-down variant.
+- **Fresh Green Disabled** (`{colors.primary-disabled}` — #b8d8cd): Muted green tint on disabled CTAs.
+- **Fresh Green Tint** (`{colors.primary-light}` — #ecf7f2): Very light green surface used for selected cards, positive state panels, and completion chips.
+- **Signal Red** (`{colors.urgency}` — #e5484d): Urgency-only accent. Applied exclusively to disaster alerts, emergency risk indicators, and urgent campaign signals. Never used decoratively.
+- **Signal Red Tint** (`{colors.urgency-light}` — #feeeef): Pale urgency tint for inline alert cards and emergency background panels.
+- **Amber Warning** (`{colors.warning}` — #ffb020): Warning state between safe and danger. Slightly cleaner and brighter than the previous earthy amber.
+- **Amber Light** (`{colors.warning-light}` — #fff6df): Background fill for caution-level alert panels.
 
 ### Risk Level (Farm App Signature)
 
-- **Risk Safe** (`{colors.risk-safe}` — #52b788): Bright natural green. "안전" state indicator.
-- **Risk Caution** (`{colors.risk-caution}` — #f4a261): Warm amber. "주의" state.
-- **Risk Danger** (`{colors.risk-danger}` — #e07a5f): Terracotta orange-red. "위험" state.
-- **Risk Emergency** (`{colors.risk-emergency}` — #e63946): Full Harvest Red. "긴급" state. Pulses on animation.
+- **Risk Safe** (`{colors.risk-safe}` — #22a06b): Clean green. "안전" state indicator.
+- **Risk Caution** (`{colors.risk-caution}` — #ffb020): Clean amber. "주의" state.
+- **Risk Danger** (`{colors.risk-danger}` — #ff7a45): Bright orange-red. "위험" state.
+- **Risk Emergency** (`{colors.risk-emergency}` — #e5484d): Full Signal Red. "긴급" state. Pulses on animation.
 
 ### Surface
 
-- **Canvas** (`{colors.canvas}` — #fafaf8): The warm off-white page floor. Slightly warmer than pure white — evokes natural paper and farmland.
-- **Surface Soft** (`{colors.surface-soft}` — #f2f0ed): Light warm fill — used on alternating campaign card rows, disabled field backgrounds, the filter/sort band, and Admin table row stripes.
-- **Surface Warm** (`{colors.surface-warm}` — #e8e5e0): A slightly deeper warm tone for sidebar panels, the checklist background in the Farm app, and the footer band.
-- **Surface Dark** (`{colors.surface-dark}` — #1a2e1e): Deep forest green surface. Used as the background for the urgency alert banner overlay and the emergency full-screen warning modal in the Farm app.
+- **Canvas** (`{colors.canvas}` — #f7f8fa): Primary app and web background. Clean and bright, similar to modern finance and utility apps.
+- **Surface Soft** (`{colors.surface-soft}` — #f2f4f6): Default soft fill for segmented controls, disabled fields, grouped sections, and admin rows.
+- **Surface Warm** (`{colors.surface-warm}` — #eef1f4): Neutral supporting surface for footer bands or sub-panels. Keep warmth through photography and copy, not beige chrome.
+- **Surface Card** (`{colors.surface-card}` — #ffffff): Default card and sheet background.
+- **Surface Dark** (`{colors.surface-dark}` — #191f28): Dark neutral surface used in emergency full-screen warnings and high-contrast overlays.
 
 ### Hairlines & Borders
 
-- **Hairline** (`{colors.hairline}` — #e0ddd8): Default 1px border — campaign card borders, form dividers, table separators. Warm-toned to match the canvas.
-- **Hairline Soft** (`{colors.hairline-soft}` — #ece9e4): Lighter divider for long editorial sections.
-- **Border Strong** (`{colors.border-strong}` — #c4c0b8): Heavier stroke for focused form inputs and disabled outline buttons.
+- **Hairline** (`{colors.hairline}` — #e5e8eb): Default 1px border.
+- **Hairline Soft** (`{colors.hairline-soft}` — #eef1f4): Lighter divider for long sections.
+- **Border Strong** (`{colors.border-strong}` — #c9ced6): Heavier stroke for focus states and grouped controls.
 
 ### Text
 
-- **Ink** (`{colors.ink}` — #1c1c1a): Primary text. Near-black with a warm undertone — not cold #000000. Display headlines, body paragraphs, primary nav links.
-- **Body** (`{colors.body}` — #3d3d3a): Secondary running text inside campaign stories, farm descriptions, and long-form copy.
-- **Muted** (`{colors.muted}` — #6b6862): Sub-labels, metadata rows ("경북 청송 · 200kg · 사과"), inactive nav labels, "더 보기" links.
-- **Muted Soft** (`{colors.muted-soft}` — #9b9792): Disabled text. Placeholder copy inside form inputs.
-- **On Primary** (`{colors.on-primary}` — #ffffff): White text on Earth Green CTAs.
-- **On Urgency** (`{colors.on-urgency}` — #ffffff): White text on Harvest Red alert elements.
-- **On Dark** (`{colors.on-dark}` — #f0f0ec): Off-white text on `{colors.surface-dark}` emergency surfaces.
+- **Ink** (`{colors.ink}` — #191f28): Primary text.
+- **Body** (`{colors.body}` — #4e5968): Secondary running text.
+- **Muted** (`{colors.muted}` — #8b95a1): Metadata and inactive labels.
+- **Muted Soft** (`{colors.muted-soft}` — #b0b8c1): Disabled text and placeholders.
+- **On Primary** (`{colors.on-primary}` — #ffffff): White text on Fresh Green CTAs.
+- **On Urgency** (`{colors.on-urgency}` — #ffffff): White text on Signal Red alert elements.
+- **On Dark** (`{colors.on-dark}` — #ffffff): High-contrast text on `{colors.surface-dark}` emergency surfaces.
 
 ### Semantic
 
-- **Error** (`{colors.error}` — #c1121f): Form validation errors. Distinct from Harvest Red — slightly darker, used only for form states.
-- **Success** (`{colors.success}` — #2d6a4f): Matches Earth Green. Used for "배송 완료", "복구 완료" confirmation states.
-- **CO2 Teal** (`{colors.co2}` — #0077b6): A single environmental data accent used exclusively in the CO₂ impact visualization inside the Climate Score and Impact Report. Distinct from brand green to avoid confusion. Never used as a UI accent.
+- **Error** (`{colors.error}` — #d92d20): Form validation errors.
+- **Success** (`{colors.success}` — #1f7a5a): Used for "배송 완료", "복구 완료" confirmation states.
+- **CO2 Blue** (`{colors.co2}` — #3182f6): Environmental data accent used only in CO₂ impact visualization.
+
+### Visual Direction Update
+
+The interface should move away from earthy, heavy, dark-green UI chrome and toward a **Toss-like clarity model**:
+
+- Use neutral backgrounds and white cards as the default.
+- Let green appear as a precise action and selection color, not as a large background fill.
+- Avoid emoji-heavy UI as the primary visual language. Use simple line icons, small illustrated glyphs, or restrained pictograms instead.
+- Reduce decorative borders, dashed boxes, and oversized segmented pills.
+- Favor card grouping, thin dividers, and quiet hierarchy over saturated color blocks.
 
 ### Scrim
 
@@ -114,6 +125,20 @@ Korean text should never be tracked negatively below -0.5px — Hangul strokes b
 
 ## Layout
 
+### Mobile-first Web Strategy
+
+The public Give On Web experience is designed mobile-first. Desktop is an expanded layout, not the primary layout. Users are expected to arrive through mobile web links, disaster alerts, SNS shares, and quick payment flows, so the core donation journey must complete comfortably on a phone.
+
+**Mobile-first priorities:**
+- Disaster state and campaign title must be visible within the first screen.
+- The primary CTA must be sticky or repeated at key scroll points.
+- Campaign cards must work as single-column, photo-first cards.
+- Campaign detail pages replace the desktop donation rail with a sticky bottom donation bar.
+- Amount selection defaults to the recommended tier, usually 30,000 KRW.
+- Long campaign stories should be shortened by default and expanded progressively.
+- Impact numbers should stack vertically on mobile before introducing horizontal scroll.
+- All touch targets must be at least 48px high.
+
 ### Spacing System
 
 - **Base unit:** 4px.
@@ -124,9 +149,10 @@ Korean text should never be tracked negatively below -0.5px — Hangul strokes b
 
 ### Grid & Container
 
-- **Max content width:** 1280px centered. Campaign detail pages cap at 1080px.
-- **Campaign grid (web):** 3-column at desktop (1128px+), 2-column at tablet, 1-column on mobile. 24px gutters.
-- **Campaign detail:** 2-column — photo + story body on the left (~60%), sticky donation panel on the right (~36%). Mirrors Airbnb's listing detail layout.
+- **Mobile web width:** Design first at 375px and verify at 390px, 430px, and 768px. The 375px layout is the source of truth for public web screens.
+- **Max content width:** 1280px centered on desktop. Campaign detail pages cap at 1080px only after the mobile layout is complete.
+- **Campaign grid (web):** 1-column on mobile, 2-column at tablet, 3-column at desktop (1128px+). Mobile card spacing is 16px; desktop gutters are 24px.
+- **Campaign detail:** Mobile uses a single-column story flow with a sticky bottom donation bar. Desktop expands into a 2-column layout — photo + story body on the left (~60%), sticky donation panel on the right (~36%).
 - **Admin dashboard:** Full-width table layout with a left sidebar (240px) for navigation, right content area for map + list.
 - **Farm iOS App:** Single column, full-bleed section cards. The risk indicator takes the top ~40% of the home screen viewport.
 
@@ -147,23 +173,123 @@ Single shadow tier plus baseline flat.
 
 ---
 
+## Interaction States
+
+State rules must be consistent across web, app, and admin surfaces. Default visuals are intentionally calm; changes in state should be communicated through contrast, border strength, motion, and copy rather than excessive color noise.
+
+### Global State Principles
+
+- **Default:** Flat or lightly bordered surface with clear text hierarchy.
+- **Hover (web only):** Slight shadow reveal or border emphasis. Do not shift layout.
+- **Pressed:** Color deepens to the active token. No scale-down animation on urgent elements.
+- **Focus-visible:** 2px outline using `{colors.border-strong}` outside the component bounds. Never rely on color fill alone.
+- **Selected:** Use fill change plus icon/check or weight change. Selection must remain legible without color perception.
+- **Disabled:** Lower contrast using `{colors.primary-disabled}` or `{colors.muted-soft}`; never reduce opacity below readable levels for text.
+- **Loading:** Preserve layout with inline spinner or skeleton. Avoid swapping the whole screen to a blank loader.
+- **Empty:** Empty states should explain the situation and suggest one next action.
+- **Error:** Use `{colors.error}` for validation and blocking form states only. Do not reuse urgency red.
+- **Success:** Use `{colors.success}` or `{colors.primary-light}` for completion, delivery, and checklist-confirmed states.
+
+### Component State Requirements
+
+- **Buttons:** Define default / hover / pressed / focus / disabled / loading for all button types.
+- **Inputs:** Define resting / focus / filled / error / disabled / success.
+- **Campaign cards:** Define default / hover / saved / urgent / completed / skeleton.
+- **Badges and chips:** Define selected and unselected states with both color and border or icon difference.
+- **Bottom donation bar:** Define sticky resting, expanded summary, and submitting-payment states.
+
+---
+
+## Motion
+
+Motion should reinforce urgency and clarity, not decoration. The system uses a small number of meaningful transitions to guide attention through risk recognition, donation, and confirmation.
+
+### Motion Principles
+
+- Use motion only when it helps explain status, hierarchy, or next action.
+- Keep standard transitions calm and short. Reserve stronger motion for emergency alerts and successful completion.
+- Avoid springy or playful movement on disaster-related surfaces.
+
+### Motion Tokens
+
+- **Fast UI transition:** 160ms, ease-out.
+- **Standard panel / chip transition:** 220ms, ease-out.
+- **Modal / bottom sheet enter:** 280ms, ease-out.
+- **Success confirmation:** 420ms, ease-out.
+- **Emergency pulse:** 1.5s, ease-in-out, repeating.
+
+### Required Motion Moments
+
+- **Risk emergency pulse:** The red risk circle in the Farm emergency state pulses subtly in scale and shadow.
+- **Sticky donation bar reveal:** On mobile detail pages, the bar should slide up once the page settles and remain stable during scroll.
+- **Donation completion:** Earth Green confirmation icon animates once, then rests. Do not loop success animation.
+- **Timeline progression:** Climate score nodes may fade or reveal left-to-right when the section first enters view.
+- **Skeleton loading:** Use soft shimmer or fade, never bright gradients.
+
+---
+
 ## Components
 
 ### Buttons
 
-**`button-primary`** — Earth Green fill (#2d6a4f), white text, `{rounded.full}` pill shape (9999px), 16px / 600 label, 48px height, 24×16px padding. Primary CTAs: "기부하기", "등록하기", "경보 확인".
+**`button-primary`** — Fresh Green fill (#1f7a5a), white text, 16px / 600 label, 54px height, 20px radius for app flows and `{rounded.full}` pill only for compact web CTAs. Primary CTAs: "기부하기", "등록하기", "경보 확인".
 
-**`button-primary-active`** — Background to `{colors.primary-active}` (#1b4332). No transform.
+**`button-primary-active`** — Background to `{colors.primary-active}` (#176448). No transform.
 
-**`button-primary-disabled`** — `{colors.primary-disabled}` (#b7dbc8) fill, white text, cursor not-allowed.
+**`button-primary-disabled`** — `{colors.primary-disabled}` (#b8d8cd) fill, white text, cursor not-allowed.
 
-**`button-secondary`** — White fill, Earth Green text (#2d6a4f), 1px Earth Green border, `{rounded.full}` pill, 48px height. Used for "나중에", "자세히 보기", modal cancel.
+**`button-secondary`** — White fill, `{colors.ink}` text, 1px `{colors.hairline}` border, 16px radius, 52px height. Used for "나중에", "자세히 보기", modal cancel.
 
-**`button-urgency`** — Harvest Red fill (#e63946), white text, `{rounded.full}` pill, 48px height. Reserved exclusively for "긴급 경보 확인" and "지금 바로 기부" on disaster-alert modals. Never used for standard CTAs.
+**`button-urgency`** — Signal Red fill (#e5484d), white text, 16px radius, 54px height. Reserved exclusively for "긴급 경보 확인" and "지금 바로 기부" on disaster-alert modals.
 
-**`button-tertiary-text`** — Earth Green text, no surface, underlined on hover. "더 보기", "전체 보기", modal close labels.
+**`button-tertiary-text`** — Fresh Green text, no surface, underlined on hover. "더 보기", "전체 보기", modal close labels.
 
-**`button-pill-filter`** — White fill, 1px hairline border, `{rounded.full}`, 36px height, 14px / 500 label. Used in the campaign filter strip ("전체", "폭염", "우박", "가뭄").
+**`button-pill-filter`** — White fill, 1px hairline border, `{rounded.full}`, 36px height, 14px / 500 label. Selected state uses white fill with stronger border and text color rather than a solid saturated background.
+
+### Segmented Controls
+
+**`segmented-control`** — Replaces the oversized dark-green onboarding toggle. Use a quiet grouped control similar to Toss tabs.
+
+- Container: `{colors.surface-soft}` background, 60px height, 18px radius, 4px internal padding.
+- Active segment: white surface with subtle shadow and `{colors.ink}` text, not a solid green slab.
+- Inactive segment: transparent background with `{colors.muted}` text.
+- Accent usage: green appears only as a small leading icon tint, underline, or 2px active indicator.
+- Labels: icon + text optional, but icons should be restrained and secondary.
+
+### Form Controls
+
+**`text-input`** — 56px min height, `{colors.surface-card}` or `{colors.surface-soft}` background depending on context, 1px `{colors.hairline}` border, 16px radius, 16px horizontal padding, `{typography.body-md}` text.
+
+- **Focus:** 2px outer ring with `{colors.border-strong}` and border shift to `{colors.primary}`.
+- **Error:** Border and helper text use `{colors.error}`.
+- **Disabled:** `{colors.surface-soft}` background, `{colors.muted-soft}` text, non-interactive cursor.
+- **Placeholder:** `{colors.muted-soft}` only; never use placeholder as the sole label.
+
+**`textarea`** — Same visual rules as `text-input`, 120px minimum height, resize disabled on mobile.
+
+**`select-pill-group`** — Horizontal or wrapped selection pills for produce type, disaster cause, or amount tiers. Selected state must use fill and checkmark or weight change.
+
+**`helper-text`** — `{typography.caption-sm}` below a field. Default muted, error in `{colors.error}`, success in `{colors.success}`.
+
+### Selection Cards
+
+**`selection-card`** — Replaces emoji-first farm-type tiles. Used for livestock, crop, and other onboarding choices.
+
+- Layout: white card, 20px radius, 1px `{colors.hairline}` border, 16px padding, minimum 120px height.
+- Content: small icon or simple illustration at top, label below in `{typography.title-sm}`.
+- Default: white card with neutral border.
+- Selected: `{colors.primary-light}` tint background, 2px `{colors.primary}` border, optional top-right check icon.
+- Avoid giant emoji centered alone. If emojis are used in mocks, treat them as placeholders only.
+- Two-column grid on mobile with generous spacing; cards should feel like option sheets, not buttons.
+
+### Form System Rules
+
+- Every field must include a visible label above or beside the field.
+- Required fields use text labels like "필수" rather than an asterisk alone.
+- Validation should trigger on blur and on submit, not on every keystroke for mobile.
+- Error copy must explain how to fix the issue, not just state that it failed.
+- Multi-step forms must show current step, total step count, and save entered values during back navigation.
+- Custom entry actions such as "직접 입력" should use a secondary card button or bottom sheet trigger, never a dashed empty placeholder box in the main layout.
 
 ### Risk Level Indicator (Farm App Signature Component)
 
@@ -181,18 +307,18 @@ Single shadow tier plus baseline flat.
 **`campaign-card`** — Photo-first card. `{rounded.md}` (12px) clipping. 1px `{colors.hairline}` border. Internal layout:
 
 - **Photo plate:** 4:3 aspect ratio, full-bleed to card edges. Produce photo is never cropped tighter than showing the full item — show the hail scar, show the irregular shape. A floating badge top-left carries campaign type.
-- **Urgency badge** (`{component.urgency-badge}`): Pill badge. "긴급" in Harvest Red / "진행중" in Earth Green / "마감 임박" in Amber.
-- **Heart/save:** `{component.icon-button-circle}` top-right. Outlined by default, Earth Green filled when saved.
+- **Urgency badge** (`{component.urgency-badge}`): Pill badge. "긴급" in Signal Red / "진행중" in Fresh Green / "마감 임박" in Amber.
+- **Heart/save:** `{component.icon-button-circle}` top-right. Outlined by default, Fresh Green filled when saved.
 - **Meta block:** 16px padding beneath photo. Campaign title in `{typography.display-md}` ink (2 lines max). Region + cause + remaining quantity in `{typography.body-sm}` muted ("경북 청송 · 우박 · 사과 200kg 남음"). Progress bar showing funding completion in Earth Green. "3만원 · 2kg 박스 직배송" price summary right-aligned in `{typography.body-sm}` ink.
 
-**`campaign-card-urgent`** — Same structure as `campaign-card` but with a 2px Harvest Red top border and a full-width `{colors.urgency-light}` tint behind the meta block. Used for AI-auto-generated campaigns with urgency score ≥ 7.
+**`campaign-card-urgent`** — Same structure as `campaign-card` but with a 2px Signal Red top border and a full-width `{colors.urgency-light}` tint behind the meta block. Used for AI-auto-generated campaigns with urgency score ≥ 7.
 
 ### Campaign Detail Panel
 
 **`donation-panel`** — Sticky right-rail panel (mirrors Airbnb's `{component.reservation-card}`). White surface, `{rounded.md}` 12px, 1px `{colors.hairline}` border, card-float shadow, 24px padding.
 
 Contents (top to bottom):
-1. Amount selector — three pill buttons (1만원 / 3만원 / 5만원) + free-input field. Active pill: Earth Green fill, white text.
+1. Amount selector — three pill buttons (1만원 / 3만원 / 5만원) + free-input field. Active pill: Fresh Green fill, white text.
 2. Reward preview — small photo of the produce box with delivery note.
 3. "기부하기" `{component.button-primary}` full-width.
 4. Reward breakdown: "3만원 → 사과 2kg 박스 직배송 + 농부 감사 사진" in `{typography.body-sm}` muted.
@@ -223,14 +349,14 @@ Contents (top to bottom):
 **`gratitude-photo-card`** — The "농부 감사 사진" notification component. Appears in the web app notification center and as a push notification preview.
 
 - **Layout:** Photo (1:1, `{rounded.md}`, 80px) left-aligned. To the right: farmer name in `{typography.title-sm}` ink, message excerpt in `{typography.body-sm}` body (2 lines), timestamp in `{typography.caption-sm}` muted.
-- **Background:** `{colors.primary-light}` (#d8f3dc) tint — a warm green "good news" surface distinct from the urgency red alerts.
-- **Border:** 1px `{colors.primary}` Earth Green left-rail accent.
+- **Background:** `{colors.primary-light}` tint — a clean green "good news" surface distinct from urgency alerts.
+- **Border:** 1px `{colors.primary}` Fresh Green left-rail accent.
 
 ### Impact Numbers Block
 
 **`impact-block`** — Used in the Impact Report page and the year-end Climate Journey Card. Three or four stat columns side by side.
 
-- **Number:** `{typography.number-display}` (48px / 700) in the relevant semantic color — Earth Green for saved produce and CO₂, Ink for donor count, CO2 Teal for environmental data.
+- **Number:** `{typography.number-display}` (48px / 700) in the relevant semantic color — Fresh Green for saved produce, Ink for donor count, CO2 Blue for environmental data.
 - **Unit:** `{typography.body-sm}` muted immediately below the number ("kg 구제", "명 참여", "톤 CO₂ 절감").
 - **Dividers:** 1px `{colors.hairline}` between columns.
 
@@ -239,21 +365,21 @@ Contents (top to bottom):
 **`checklist-row`** — Used in the Farm app's danger/emergency state home screen.
 
 - **Container:** Full-width row, 16px vertical padding, 1px bottom `{colors.hairline}`.
-- **Checkbox:** 24×24px rounded square (`{rounded.sm}`) — unchecked: `{colors.hairline}` stroke, white fill; checked: Earth Green fill, white checkmark.
+- **Checkbox:** 24×24px rounded square (`{rounded.sm}`) — unchecked: `{colors.hairline}` stroke, white fill; checked: Fresh Green fill, white checkmark.
 - **Label:** `{typography.body-md}` ink ("환풍기 최대 가동 확인"). Checked state: `{colors.muted}` text with strikethrough.
-- **Completion tag:** When all items checked, a full-width "체크리스트 완료 ✓" success banner in `{colors.primary-light}` background, Earth Green text.
+- **Completion tag:** When all items checked, a full-width "체크리스트 완료 ✓" success banner in `{colors.primary-light}` background, Fresh Green text.
 
 ### Top Navigation (Web)
 
-**`top-nav`** — Warm off-white surface (#fafaf8), 72px height, 1px bottom `{colors.hairline}`. Give On wordmark (Earth Green logotype) flush left. Center: filter/category tabs (전체 / 폭염 · 가뭄 / 한파 / 우박). Right: "내 기부 내역" link + account avatar.
+**`top-nav`** — Neutral light surface using `{colors.canvas}`, 72px height, 1px bottom `{colors.hairline}`. Give On wordmark (Fresh Green logotype) flush left. Center: filter/category tabs (전체 / 폭염 · 가뭄 / 한파 / 우박). Right: "내 기부 내역" link + account avatar.
 
 **`nav-disaster-banner`** — A full-width slim banner (44px height) that appears above the top nav only when an active disaster is ongoing. `{colors.surface-dark}` background, `{colors.on-dark}` text. "🔴 경북 청송 폭염 특보 발령 중 — 지금 기부하기 →" in `{typography.body-sm}`. Dismissable.
 
 ### Bottom Navigation (Farm iOS App)
 
-**`bottom-nav-farm`** — iOS standard bottom tab bar. White surface, 1px top `{colors.hairline}`. Four tabs: 홈 / 경보 이력 / 못난이 등록 / 설정. Active tab: Earth Green icon + label. Inactive: muted icon + label.
+**`bottom-nav-farm`** — iOS standard bottom tab bar. White surface, 1px top `{colors.hairline}`. Four tabs: 홈 / 경보 이력 / 못난이 등록 / 설정. Active tab: Fresh Green icon + label. Inactive: muted icon + label.
 
-**`bottom-bar-donation`** — Sticky bottom bar on campaign detail on mobile (mirrors Airbnb's mobile reservation bar). White surface, 1px top hairline, 16px padding. Left: price summary ("3만원 → 사과 2kg"). Right: "기부하기" `{component.button-primary}` (Earth Green pill, 48px height, 160px width).
+**`bottom-bar-donation`** — Sticky bottom bar on campaign detail on mobile. White surface, 1px top hairline, 16px padding. Left: price summary ("3만원 → 사과 2kg"). Right: "기부하기" `{component.button-primary}` (Fresh Green CTA, 54px height, minimum 144px width).
 
 ### Ugly Produce Registration (Farm App)
 
@@ -265,6 +391,34 @@ Contents (top to bottom):
 - **Quantity input:** Numeric input with kg unit label, `{component.text-input}` style.
 - **Submit CTA:** "기부 답례품으로 등록하기" `{component.button-primary}` full-width.
 
+### Onboarding Pattern (Farm App)
+
+The current onboarding must be redesigned to feel cleaner and more premium, with the clarity of Toss and the warmth of a civic service product.
+
+**Screen structure:**
+- Top: compact progress indicator with small neutral dots and a short step label.
+- Header: concise title and one-line helper copy.
+- Type switch: quiet segmented control for `가축` / `농작물`.
+- Choice area: selection cards with simple icons and clear labels.
+- Input area: a grouped card for quantity or scale input.
+- Bottom: fixed primary CTA with safe-area padding.
+
+**Specific UI corrections for the current screen:**
+- Do not fill the active `가축` tab with a large dark green pill. Use a white active segment on a soft gray track.
+- Replace the large centered emojis with cleaner icons or smaller illustrative marks.
+- Change livestock options from thin outlined boxes to substantial white cards with better spacing and selected-state contrast.
+- Replace the dashed `+ 직접 입력` area with a secondary action card or bottom-sheet trigger button.
+- Change the quantity field from a bare underline to a full input card with label, value, and unit.
+- Use a bottom-fixed CTA with 16px radius instead of a long heavy pill button.
+- Reduce visible color usage on the onboarding screen to mostly neutral surfaces plus one selected accent.
+
+**Recommended copy hierarchy:**
+- Step label: `1/3 농장 정보`
+- Title: `무엇을 키우고 계신가요?`
+- Helper: `가축 또는 농작물을 선택하면 다음 단계에서 자세히 등록할 수 있어요.`
+- Field label: `축종`
+- Quantity label: `사육 두수`
+
 ### Admin Dashboard
 
 **`admin-risk-map`** — Full-width map panel (카카오맵) with color-coded farm markers using risk-level token colors. Urgency-level farms pulse. Filter controls float top-left.
@@ -273,9 +427,30 @@ Contents (top to bottom):
 
 **`admin-stat-row`** — A horizontal row of 4 summary stat cards at the top of the dashboard. Each card: `{colors.surface-soft}` background, stat number in `{typography.display-sm}` ink, label in `{typography.body-sm}` muted. ("오늘 위험 농가 23곳 / 못난이 등록 8건 / 진행 캠페인 12건 / 이번 주 기부액 4.2백만원").
 
+### Admin Operating UI
+
+**`admin-table`** — Desktop-first table component for delivery, campaign approval, and farm status management.
+
+- Header row: `{colors.surface-soft}` background, `{typography.caption}` or `{typography.body-sm}` labels.
+- Row height: 56px minimum.
+- Zebra striping: optional using `{colors.surface-soft}` at low contrast.
+- Sticky header: recommended for long delivery lists.
+- First action should always be visible without horizontal scroll on tablet.
+
+**`admin-filter-bar`** — A compact control row for date range, risk level, status, and region filters. Use pills for quick filters and selects for dense options.
+
+**`status-chip`** — Reusable small chip for `pending_approval`, `approved`, `rejected`, `배송준비`, `배송중`, `도착확인`.
+
+- Pending: warm neutral or amber tint.
+- Approved / complete: green tint.
+- Rejected / blocked: error tint.
+- In transit: neutral outline with darker text.
+
+**`empty-state-panel`** — Used when there are no urgent farms, no pending campaigns, or no active deliveries. Includes one sentence of explanation and one action button such as "전체 농가 보기" or "새 캠페인 생성".
+
 ### Footer
 
-**`footer`** — `{colors.surface-warm}` (#e8e5e0) background — the only non-canvas surface in the footer band, providing a subtle warm separator from the page content. Three link columns (서비스 / 농가 파트너 / 회사). Earth Green wordmark left-aligned. CO₂ impact running total ("지금까지 xxx톤 CO₂ 절감에 기여했습니다") displayed as a prominent footer headline in `{typography.display-sm}` Earth Green.
+**`footer`** — `{colors.surface-warm}` background — a quiet neutral separator from the page content. Three link columns (서비스 / 농가 파트너 / 회사). Fresh Green wordmark left-aligned. CO₂ impact running total ("지금까지 xxx톤 CO₂ 절감에 기여했습니다") displayed as a prominent footer headline in `{typography.display-sm}` Fresh Green.
 
 ---
 
@@ -283,10 +458,27 @@ Contents (top to bottom):
 
 | Breakpoint | Width | Key Changes |
 |---|---|---|
-| Mobile | < 768px | Top nav: logo + hamburger. Disaster banner stays full width. Campaign grid 1-column. Campaign detail: sticky bottom donation bar replaces right-rail panel. Farm app: native iOS layout, full-bleed risk indicator. |
-| Tablet | 768–1128px | Campaign grid 2-column. Top nav shows category tabs but collapses account area. Campaign detail: donation panel narrows to 40% width. |
+| Mobile S | 360–374px | Single-column layout. Compact typography where needed. Disaster banner uses one-line truncation with CTA arrow. Bottom donation bar is mandatory on detail pages. |
+| Mobile M/L | 375–430px | Primary design target. Campaign cards are photo-first, one-column, 16px page gutters. Amount selector and CTA must fit without horizontal scrolling. |
+| Tablet | 768–1128px | Campaign grid 2-column. Top nav may reveal category tabs. Campaign detail can keep mobile-style bottom CTA or introduce a narrow donation panel depending on available height. |
 | Desktop | 1128–1440px | Full 3-column campaign grid. Full top nav. Campaign detail 2-column with sticky right-rail donation panel. Admin dashboard with left sidebar. |
 | Wide | > 1440px | Content caps at 1280px. Gutters absorb the rest. |
+
+### Mobile Web Screen Rules
+
+- Public web screens must be designed at **375px first**.
+- Desktop mockups are secondary and should be derived from the mobile structure.
+- Primary CTA must appear within the first meaningful interaction zone and again as a sticky bottom CTA where conversion matters.
+- Hero sections on mobile should prioritize: disaster state → campaign title → produce image → CTA.
+- Long campaign stories should use progressive disclosure: first 2–3 lines visible, then "더 읽기".
+- Horizontal scroll may be used for filter chips and photo thumbnails, but not for core donation content.
+
+### Web and Native App Differences
+
+- **Web:** More editorial and conversion-focused. Sticky CTA, story flow, donation tiers, and impact proof are primary.
+- **Farm iOS App:** Faster operational scanning. Risk signal, checklist, and alert actions are primary; copy must be shorter and more directive.
+- **Admin PWA:** Density is acceptable when it improves decision-making. Tables, filters, and queues may be tighter than public web surfaces.
+- Shared tokens should stay consistent, but navigation patterns should follow platform expectations rather than forcing one layout language across all surfaces.
 
 ### Touch Targets
 
@@ -303,7 +495,7 @@ The following screens represent the complete MVP surface area. Design all screen
 
 ### Give On Farm (iOS App) — 6 Screens
 
-1. **Onboarding** — Farm registration flow: location map picker + livestock type grid + count input. Step indicator top. Earth Green CTA.
+1. **Onboarding** — Farm registration flow redesigned with Toss-inspired clarity: compact step dots, neutral segmented control, white selection cards, full input fields, and fixed bottom CTA. Avoid emoji-first or dark-green-heavy UI.
 2. **Home — Safe State** — Risk indicator (green circle, "안전"), today's weather stats, morning briefing message, "못난이 등록" banner (collapsed/passive), bottom nav.
 3. **Home — Danger State** — Risk indicator (orange/red), Claude alert message, checklist rows (2–3 items), "피해 신고" CTA bottom. Background: `{colors.urgency-light}` tint behind the risk card.
 4. **Home — Emergency State** — Full-screen `{colors.surface-dark}` background, pulsing red risk circle, bold alert message, "즉시 확인" `{component.button-urgency}` CTA.
@@ -316,7 +508,7 @@ The following screens represent the complete MVP surface area. Design all screen
 8. **Main — Active Disaster** — Same as above but with `{component.nav-disaster-banner}` at top. First campaign card row shows `{component.campaign-card-urgent}` variants.
 9. **Campaign Detail — Ugly Produce** — Hero produce photo (16:9) + farmer caption + Claude story (3–4 paragraphs) + climate score timeline + donation panel (right rail). Produce photos scroll gallery below story.
 10. **Campaign Detail — Farm Alert** — Same layout but with the cattle/livestock framing: risk level badge + weather stats at top of story instead of produce photos.
-11. **Donation Complete** — Full-screen confirmation: Earth Green checkmark animation + "청송 사과 2kg 박스가 배송될 예정입니다" + climate score preview + SNS share row + "다른 농가 돕기" CTA.
+11. **Donation Complete** — Full-screen confirmation: Fresh Green checkmark animation + "청송 사과 2kg 박스가 배송될 예정입니다" + climate score preview + SNS share row + "다른 농가 돕기" CTA.
 12. **Gratitude Photo Notification** — Notification center page showing a `{component.gratitude-photo-card}` alongside other activity. Also: the push notification banner preview at top.
 13. **Impact Report** — Personal impact page: `{component.impact-block}` with 3 numbers (기부금 / 구제 농산물 / CO₂ 절감) + climate score timeline for each supported farm + "기후 여정 카드" year-end share panel.
 14. **Climate Journey Card** — Year-end shareable card (1080×1080px, Instagram-optimized). Dark green (`{colors.surface-dark}`) background, white/off-white text. Impact numbers in `{typography.number-display}`. "A님의 2026년 기후 여정" title. Give On wordmark bottom-right.
@@ -329,15 +521,65 @@ The following screens represent the complete MVP surface area. Design all screen
 
 ---
 
+## Core User Flows
+
+The design system must support these MVP flows without requiring extra navigation invention during implementation.
+
+### Citizen Donation Flow
+
+1. User sees disaster signal or campaign card.
+2. User opens campaign detail and understands the situation within one screen.
+3. User selects or confirms a recommended amount.
+4. User completes donation.
+5. User sees reward, delivery expectation, and impact confirmation.
+6. User later receives gratitude photo or impact update.
+
+### Farmer Response Flow
+
+1. Farmer opens the app and checks current risk level.
+2. Farmer reads the AI briefing and immediate checklist.
+3. Farmer records damage or registers ugly produce.
+4. Farmer reviews AI-generated public story preview.
+5. Farmer submits with consent and receives status follow-up.
+
+### Admin Approval Flow
+
+1. Admin identifies urgent farms on the risk map or queue.
+2. Admin opens a pending campaign.
+3. Admin reviews story, produce image, urgency score, and source data.
+4. Admin approves or rejects with a clear next action.
+5. Admin tracks delivery progress until donation outcome is complete.
+
+---
+
+## Copy Tone
+
+Copy should be direct, warm, and trustworthy. It should sound like a calm coordinator, not a fundraising slogan generator.
+
+- Prefer short Korean sentences over dramatic or poetic phrasing.
+- Urgency copy should explain what is happening now and what action is needed.
+- Donation copy should connect amount, produce, and delivery outcome in one sentence.
+- Success copy should confirm the result clearly before adding emotional reinforcement.
+- AI-generated farmer stories must be edited to avoid sounding over-written, exaggerated, or guilty.
+
+Example tone:
+- Good: `우박 피해로 출하가 어려워진 사과입니다. 기부로 2kg 박스를 받아보실 수 있어요.`
+- Avoid: `당신의 따뜻한 손길이 절망 속 농부에게 기적을 선물합니다.`
+
+---
+
 ## Stitch Prompt Notes
 
 When generating screens in Stitch, apply the following directives:
 
-- **Always specify the canvas color as #fafaf8**, not pure white. This is non-negotiable — pure white will flatten the warmth of the produce photography.
-- **Use Earth Green (#2d6a4f) for all primary actions.** Do not substitute teal, olive, or lime. The specific depth of this forest green is intentional.
-- **Harvest Red (#e63946) appears only on urgency/disaster elements.** If Stitch places it on decorative elements or general buttons, override it.
+- **Use a Toss-like neutral base.** Canvas should be `#f7f8fa`, cards should be white, and separators should be cool light gray.
+- **Use Fresh Green (#1f7a5a) as a restrained accent, not a dominant background.**
+- **Signal Red (#e5484d) appears only on urgency/disaster elements.** If Stitch places it on decorative elements or general buttons, override it.
 - **Produce photos must be realistically imperfect.** Request photos of actual damaged fruit with visible scarring, irregular sizing, or discoloration. Do not generate idealized produce.
+- **State handling must be explicit.** Include loading, empty, disabled, validation, success, and sticky CTA states where relevant.
 - **Korean text is primary.** All UI labels, button text, and microcopy should be in Korean. English appears only in the Admin interface section headers and in code/technical contexts.
 - **The risk indicator on the Farm app home screen should dominate the upper 40% of the viewport.** Do not reduce it to a small chip or badge — it is the primary communication of the app.
 - **Never use gradients** except inside the Climate Journey Card background (a subtle dark-green-to-black radial for depth).
-- **Round all primary CTAs to full pill shape.** Do not use square or lightly-rounded buttons for the main "기부하기" action.
+- **In app onboarding and forms, prefer rounded rectangles over full pills** for primary CTAs and selected cards.
+- **Do not make the UI feel like a generic fintech or NGO landing page.** Preserve warmth, real photography, and calm density.
+- **Do not generate onboarding screens with oversized emoji cards, dashed empty boxes, or dark green segmented bars.** Keep onboarding minimal, neutral, and premium.

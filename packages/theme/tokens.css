@@ -1,0 +1,53 @@
+@theme {
+  --font-sans: "Pretendard", "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --color-background: #f7f8fa;
+  --color-foreground: #191f28;
+  --color-card: #ffffff;
+  --color-card-foreground: #191f28;
+  --color-primary: #1f7a5a;
+  --color-primary-foreground: #ffffff;
+  --color-primary-soft: #eef7f3;
+  --color-secondary: #f2f4f6;
+  --color-secondary-foreground: #4e5968;
+  --color-muted: #f2f4f6;
+  --color-muted-foreground: #8b95a1;
+  --color-border: #e5e8eb;
+  --color-input: #e5e8eb;
+  --color-destructive: #e5484d;
+  --color-destructive-foreground: #ffffff;
+  --color-destructive-soft: #fff1f1;
+  --color-warning: #d97706;
+  --color-warning-soft: #fff7ed;
+  --color-ring: #c9ced6;
+
+  --radius-sm: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.25rem;
+  --radius-xl: 1.5rem;
+
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-soft: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+:root {
+  --background: var(--color-background);
+  --foreground: var(--color-foreground);
+  --card: var(--color-card);
+  --card-foreground: var(--color-card-foreground);
+  --primary: var(--color-primary);
+  --primary-foreground: var(--color-primary-foreground);
+  --primary-soft: var(--color-primary-soft);
+  --secondary: var(--color-secondary);
+  --secondary-foreground: var(--color-secondary-foreground);
+  --muted: var(--color-muted);
+  --muted-foreground: var(--color-muted-foreground);
+  --border: var(--color-border);
+  --input: var(--color-input);
+  --destructive: var(--color-destructive);
+  --destructive-foreground: var(--color-destructive-foreground);
+  --destructive-soft: var(--color-destructive-soft);
+  --warning: var(--color-warning);
+  --warning-soft: var(--color-warning-soft);
+  --ring: var(--color-ring);
+}
